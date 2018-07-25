@@ -1,0 +1,87 @@
+
+= Reverse Proxy Made Simple
+:images_dir: ./images/
+
+Gérald Croes (@geraldcroes) — Julien Salleyron (@juguul)
+ADEO Dev Summit 2018
+
+== $ cat speakers
+
+* Developers @ Containous
+* Worst DIYers ever ...
+* ... and let's not talk about gardening!
+* We used to have real jobs
+* Developer, Lead Developer, Software Architect, CIO, CEA, ...
+
+== Træfik
+
+image::{images_dir}/traefik-logo.svg[Træfik's Logo]
+
+== Part 1 - Why?
+
+image::{images_dir}/figureswhy-mr-anderson.jpg[Why, Mr Anderson?]
+
+Why, Mr Anderson?
+
+== Evolution of Software Design
+
+image::{images_dir}/evolution-of-software-design.jpg[Evolution of Software Design]
+
+== The Premise of Microservices...
+
+image::{images_dir}/asterix-premise.jpg[Asterix - Premise]
+
+== ...and what happens
+
+image::{images_dir}/asterix-fight.jpg[Asterix - Fighting]
+
+== !
+
+image::{images_dir}/yes-help-please.jpg[Asterix - Fighting]
+
+== Where is the service?
+
+image::{images_dir}/where-is-charlie.jpg[Where os Charlie?]
+
+== Tools of the Trade
+
+image::{images_dir}/providers-logo/docker.png[]
+image::{images_dir}/providers-logo/docker_swarm.png[]
+image::{images_dir}/providers-logo/kubernetes.png[]
+image::{images_dir}/providers-logo/mesos.png[]
+image::{images_dir}/providers-logo/marathon.png[]
+image::{images_dir}/providers-logo/rancheros.png[]
+image::{images_dir}/providers-logo/ec2.png[]
+image::{images_dir}/providers-logo/ecs.png[]
+image::{images_dir}/providers-logo/servicefabric.png[]
+image::{images_dir}/providers-logo/consul.png[]
+image::{images_dir}/providers-logo/netflix_oss.png[]
+image::{images_dir}/providers-logo/etcd.png[]
+image::{images_dir}/providers-logo/zookeeper.png[]
+image::{images_dir}/providers-logo/dynamodb.png[]
+
+== What If I Told You?
+
+image::{images_dir}/what-if-I-told-you.jpg[What If I Told You]
+
+That You Don't Have to Write This Configuration File...?
+
+== Here Comes Traefik!
+
+image::{images_dir}/figures/architecture-overview.svg[Traefik Architecture]
+
+== Part 2 - Core Concepts
+
+image::{images_dir}/bored-minion.jpg[Bored Minion]
+
+== Remember the Diagram?
+
+image::{images_dir}/figures/architecture-overview.svg[Traefik Architecture]
+
+== Let's Simplify
+
+image::{images_dir}/figures/architecture-siplified.svg[Traefik Simplified Architecture]
+
+== Providers
+
+image::{images_dir}/figures/architecture-at-a-glance-provider.svg[Traefik Simplified Architecture]
