@@ -19,7 +19,7 @@ image::{images_dir}/traefik-logo.svg[Træfik's Logo]
 
 == Part 1 - Why?
 
-image::{images_dir}/why-mr-anderson.jpg[Why, Mr Anderson?]
+image::{images_dir}/why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
 
 Why, Mr Anderson?
 
