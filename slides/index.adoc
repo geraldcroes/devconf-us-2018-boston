@@ -1,0 +1,87 @@
+
+= Reverse Proxy Made Simple
+include::./attributes.adoc[]
+
+// Gérald Croes (@geraldcroes) — Julien Salleyron (@juguul)
+// ADEO Dev Summit 2018
+
+== $ cat speakers
+
+* Developers @ Containous
+* Worst DIYers ever ...
+* ... and let's not talk about gardening!
+* We used to have real jobs
+* Developer, Lead Developer, Software Architect, CIO, CEA, ...
+
+== Træfik
+
+image::{images_dir}/traefik-logo.svg[Træfik's Logo]
+
+== Part 1 - Why?
+
+image::{images_dir}/why-mr-anderson.jpg[Why, Mr Anderson?]
+
+Why, Mr Anderson?
+
+== Evolution of Software Design
+
+image::{images_dir}/evolution-of-software-design.jpg[Evolution of Software Design]
+
+== The Premise of Microservices...
+
+image::{images_dir}/asterix-premise.jpg[Asterix - Premise]
+
+== ...and what happens
+
+image::{images_dir}/asterix-fight.jpg[Asterix - Fighting]
+
+== !
+
+image::{images_dir}/yes-help-please.jpg[Asterix - Fighting]
+
+== Where is the service?
+
+image::{images_dir}/where-is-charlie.jpg[Where os Charlie?]
+
+== Tools of the Trade
+
+image::{images_dir}/docker.png[]
+image::{images_dir}/docker-swarm.png[]
+image::{images_dir}/kubernetes.png[]
+image::{images_dir}/mesos.png[]
+image::{images_dir}/marathon.png[]
+image::{images_dir}/rancher-os.png[]
+image::{images_dir}/ec2.png[]
+image::{images_dir}/ecs.png[]
+image::{images_dir}/service-fabric.png[]
+image::{images_dir}/consul.png[]
+image::{images_dir}/netflix_oss.png[]
+image::{images_dir}/etcd.png[]
+image::{images_dir}/zookeeper.png[]
+image::{images_dir}/dynamodb.png[]
+
+== What If I Told You?
+
+image::{images_dir}/what-if-I-told-you.jpg[What If I Told You]
+
+That You Don't Have to Write This Configuration File...?
+
+== Here Comes Traefik!
+
+image::{images_dir}/architecture-overview.svg[Traefik Architecture]
+
+== Part 2 - Core Concepts
+
+image::{images_dir}/bored-minion.jpg[Bored Minion]
+
+== Remember the Diagram?
+
+image::{images_dir}/architecture-overview.svg[Traefik Architecture]
+
+== Let's Simplify
+
+image::{images_dir}/architecture-simplified.svg[Traefik Simplified Architecture]
+
+== Providers
+
+image::{images_dir}/architecture-at-a-glance-provider.svg[Traefik Simplified Architecture]
