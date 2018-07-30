@@ -1,17 +1,20 @@
 
 = Reverse Proxy Made Simple
-include::./attributes.adoc[]
+include::./includes/attributes.adoc[]
 
-// Gérald Croes (@geraldcroes) — Julien Salleyron (@juguul)
-// ADEO Dev Summit 2018
+Damien DUPORTAL
 
-== $ cat speakers
+DevConf.in - Bengaluru - 2018
 
-* Developers @ Containous
-* Worst DIYers ever ...
-* ... and let's not talk about gardening!
-* We used to have real jobs
-* Developer, Lead Developer, Software Architect, CIO, CEA, ...
+== Whoami
+
+* Damien DUPORTAL - link:https://twitter.com/DamienDuportal[@DamienDuportal].
+* Træfik's Developer Advocate @ Containous and Freelancer.
+* Former Training Engineer @ CloudBees.
+* Docker mentor.
+* Human stack focused. Rock climber. Passionated. Talk to me!
+
+image::{images_dir}/damien.jpg[height=200]
 
 == Træfik
 
@@ -41,24 +44,24 @@ image::{images_dir}/yes-help-please.jpg[Asterix - Fighting]
 
 == Where is the service?
 
-image::{images_dir}/where-is-charlie.jpg[Where os Charlie?]
+image::{images_dir}/where-is-charlie.jpg["Where os Charlie?",width=900]
 
 == Tools of the Trade
 
-image::{images_dir}/docker.png[]
-image::{images_dir}/docker-swarm.png[]
-image::{images_dir}/kubernetes.png[]
-image::{images_dir}/mesos.png[]
-image::{images_dir}/marathon.png[]
-image::{images_dir}/rancher-os.png[]
-image::{images_dir}/ec2.png[]
-image::{images_dir}/ecs.png[]
-image::{images_dir}/service-fabric.png[]
-image::{images_dir}/consul.png[]
-image::{images_dir}/netflix_oss.png[]
-image::{images_dir}/etcd.png[]
-image::{images_dir}/zookeeper.png[]
-image::{images_dir}/dynamodb.png[]
+image::{images_dir}/docker.png[width=80,float=left]
+image::{images_dir}/docker-swarm.png[width=80,float=left]
+image::{images_dir}/kubernetes.png[width=80,float=left]
+image::{images_dir}/mesos.png[width=80,float=left]
+image::{images_dir}/marathon.png[width=80,float=left]
+image::{images_dir}/rancher-os.png[width=80,float=left]
+image::{images_dir}/ec2.png[width=80,float=left]
+image::{images_dir}/ecs.png[width=80,float=left]
+image::{images_dir}/service-fabric.png[width=80,float=left]
+image::{images_dir}/consul.png[width=80,float=left]
+image::{images_dir}/netflix_oss.png[width=80,float=left]
+image::{images_dir}/etcd.png[width=80,float=left]
+image::{images_dir}/zookeeper.png[width=80,float=left]
+image::{images_dir}/dynamodb.png[width=80,float=left]
 
 == What If I Told You?
 
@@ -66,9 +69,9 @@ image::{images_dir}/what-if-I-told-you.jpg[What If I Told You]
 
 That You Don't Have to Write This Configuration File...?
 
-== Here Comes Traefik!
+== Here Comes Træfik!
 
-image::{images_dir}/architecture-overview.svg[Traefik Architecture]
+image::{images_dir}/architecture-overview.svg[Træfik Architecture]
 
 == Part 2 - Core Concepts
 
@@ -76,12 +79,12 @@ image::{images_dir}/bored-minion.jpg[Bored Minion]
 
 == Remember the Diagram?
 
-image::{images_dir}/architecture-overview.svg[Traefik Architecture]
+image::{images_dir}/architecture-overview.svg[Træfik Architecture]
 
 == Let's Simplify
 
-image::{images_dir}/architecture-simplified.svg[Traefik Simplified Architecture]
+image::{images_dir}/architecture-simplified.svg[Træfik Simplified Architecture]
 
 == Providers
 
-image::{images_dir}/architecture-at-a-glance-provider.svg[Traefik Simplified Architecture]
+image::{images_dir}/architecture-at-a-glance-provider.svg[Træfik Simplified Architecture]
