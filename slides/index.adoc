@@ -71,7 +71,7 @@ That You Don't Have to Write This Configuration File...?
 
 == Here Comes Træfik!
 
-image::{images_dir}/architecture-overview.svg[Træfik Architecture]
+image::{images_dir}/traefik-architecture.svg[Træfik Architecture]
 
 == Part 2 - Core Concepts
 
@@ -79,12 +79,107 @@ image::{images_dir}/bored-minion.jpg[Bored Minion]
 
 == Remember the Diagram?
 
-image::{images_dir}/architecture-overview.svg[Træfik Architecture]
+image::{images_dir}/traefik-architecture.svg[Træfik's Architecture]
 
 == Let's Simplify
 
-image::{images_dir}/architecture-simplified.svg[Træfik Simplified Architecture]
+image::{images_dir}/architecture-simplified.svg[Træfik's Simplified Architecture]
 
 == Providers
 
-image::{images_dir}/architecture-at-a-glance-provider.svg[Træfik Simplified Architecture]
+image::{images_dir}/architecture-at-a-glance-provider.svg[Træfik's Simplified Architecture]
+
+== Entrypoints
+
+image::{images_dir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", height=500]
+
+== Backends
+
+image::{images_dir}/architecture-at-a-glance-backends.svg[Træfik's Backends]
+
+== Frontends
+
+image::{images_dir}/architecture-at-a-glance-frontends.svg[Træfik's Frontends]
+
+== At a Glance
+
+image::{images_dir}/architecture-at-a-glance.svg[Træfik Architecture At A Glance]
+
+== In Practice
+
+image::{images_dir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
+
+== End of Part 2
+
+image::{images_dir}/happy-minions.jpg[Happy Minions]
+
+== Part 3 - Hands On
+
+image::{images_dir}/matrix-neo.jpg[Matrix Neo]
+
+== Deploying a Chat
+
+image::{images_dir}/demo-example-1.png[Demo Example 1]
+
+== Træfik's Web Dashboard: Frontends
+
+image::{images_dir}/web.frontend.png[Træfik's Web Dashboard: Frontends]
+
+== Træfik's Web Dashboard: Health
+
+image::{images_dir}/traefik-health.png[Træfik's Web Dashboard: Health]
+
+== The Cross-Origin Conundrum
+
+image::{images_dir}/demo-example-2.png[Demo Example 2]
+
+== The HTTP Challenge
+
+image::{images_dir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
+
+== The DNS Challenge
+
+image::{images_dir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
+
+== Season 2: TRAILER
+
+== !
+
+image::{images_dir}/kubernetes-logo.png[Kubernetes Logo]
+
+== Coming soon in Træfik
+
+== Already available in Træfik
+
+++++
+<span data-radium="true" style="text-decoration: line-through;">Coming soon</span>
+++++
+
+== Part 4 Before We Leave
+
+== We Missed Talking About ...
+GRPC CIRCUIT BREAKERS
+CLUSTER MODE HEALTH CHECKS
+SSL REDIRECT AUTH FORWARD CUSTOM ERROR PAGES CUSTOM HEADERS
+PROXY PROTOCOL IMAGE DOCKER MULTI ARCH HSTS
+RATE LIMITING DYNAMIC TLS CERTIFICATE
+WILDCARD CERTIFICATES ZIPKIN KUBERNETES SECRETS
+
+== The Project
+
+* https://github.com/containous/traefik
+* 16,600+ ⭐
+* 100M+ ⬇️
+* 1400+ LGTM
+* 280+ 👷
+
+== I've Found A Bug!
+
+[source,bash]
+----
+./traefik bug
+----
+
+Autofills the issue template (environment, configuration files, ...)
+
+== Thank You!
