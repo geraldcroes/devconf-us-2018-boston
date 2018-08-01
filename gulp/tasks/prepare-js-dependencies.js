@@ -4,7 +4,7 @@ module.exports = function (gulp, plugins, current_config) {
     ////////////////////////// Managing Our ToC with custom tocify script and its deps
     gulp.task('prepare:js-revealjs', function () {
         var baseRevealJSPath = current_config.nodeModulesDir + '/reveal.js',
-            revealJsDestDir = current_config.webResourcesDirName + '/reveal.js',
+            revealJsDestDir = current_config.distDir + '/reveal.js',
             mainRevealCss = gulp.src(baseRevealJSPath + '/css/reveal.css')
                 .pipe(gulp.dest(revealJsDestDir + '/css/')),
             paperCSS = gulp.src(baseRevealJSPath + '/css/print/paper.css')
@@ -43,7 +43,7 @@ module.exports = function (gulp, plugins, current_config) {
     /////////////////
     gulp.task('prepare:js-highlightjs', function () {
         var highlightNodeModule = current_config.nodeModulesDir + '/highlightjs',
-            highlightDestDir = current_config.webResourcesDirName + '/reveal.js/plugin/highlight',
+            highlightDestDir = current_config.distDir + '/reveal.js/plugin/highlight',
             highlightjsStyleRename = gulp.src(highlightNodeModule + '/styles/*.css')
                 .pipe(plugins.rename(function (path) {
                     // Removing the ".min" part of the name to avoid revealjs messing up

@@ -7,7 +7,7 @@ module.exports = function (gulp, plugins, current_config) {
         var specificImages = gulp.src(current_config.imgSrcPath + '/*')
             .pipe(gulp.dest(current_config.preparedSrcPath + '/images/')),
             commonImages = gulp.src(current_config.commonsPath + '/images/*')
-            .pipe(gulp.dest(current_config.preparedSrcPath + '/images/'));
+            .pipe(gulp.dest(current_config.destDir + '/images/'));
 
         return plugins.mergeStreams(specificImages, commonImages)
             .pipe(plugins.connect.reload());
@@ -16,6 +16,6 @@ module.exports = function (gulp, plugins, current_config) {
     gulp.task('images:styles', function () {
         // We also take care of copying the styles images to the "build" folder containgin Web resources
         return gulp.src(current_config.stylesSrcPath + '/images/*')
-            .pipe(gulp.dest(current_config.webResourcesDirName));
+            .pipe(gulp.dest(current_config.destDir + '/images/'));
     });
 };
