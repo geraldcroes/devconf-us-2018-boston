@@ -19,7 +19,8 @@ var tasks_dir_path = './tasks',
         mergeStreams: require('merge-stream'),
         fs: require('fs'),
         path: require('path'),
-        w3cjs: require('gulp-w3cjs')
+        w3cjs: require('gulp-w3cjs'),
+        sass: require('gulp-sass')
     },
     current_config = {
         docinfosPath: '/app/slides/docinfos',
