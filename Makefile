@@ -24,4 +24,11 @@ verify-links:
 verify-w3c:
 	@docker run --rm -v $(CURDIR)/dist:/app stratdat/html5validator
 
+serve:
+	@docker-compose up --build --force-recreate -d serve
+
+shell:
+	@docker-compose up --build --force-recreate -d shell
+	@docker-compose exec shell sh
+
 .PHONY: all documents verify verify-links verify-w3c
