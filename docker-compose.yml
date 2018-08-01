@@ -1,0 +1,45 @@
+version: '3.4'
+
+# Reusable options
+x-slides-base: &slides-base
+  build: ./
+  image: traefik-presentation-slides-builder
+  expose:
+  - "8000"
+  - "35729"
+  # tmpfs:
+  # - /app/prepare-src
+  # - /app/docs-toolkit/.sass-cache
+  # - /root/.npm
+  # - /tmp
+  volumes:
+  - ./slides:/app/slides
+  - ./dist:/app/dist
+  environment:
+  - LISTEN_IP=0.0.0.0
+  - LISTEN_PORT=8000
+  - LIVERELOAD_PORT=35729
+
+services:
+  serve:
+    <<: *slides-base
+    command: "default"
+    ports:
+    - "8000:8000"
+    - "35729:35729"
+
+  shell:
+    <<: *slides-base
+    entrypoint: /bin/sh
+    stdin_open: true
+    tty: true
+    ports:
+    - "8000:8000"
+    - "35729:35729"
+    volumes:
+    - ./gulp/gulpfile.js:/app/gulpfile.js
+    - ./gulp/tasks:/app/tasks
+
+  build-html:
+    <<: *slides-base
+    command: "build:html"
