@@ -15,6 +15,7 @@ x-slides-base: &slides-base
   volumes:
   - ./slides:/app/slides
   - ./dist:/app/dist
+  - ./assets:/app/assets
   environment:
   - LISTEN_IP=0.0.0.0
   - LISTEN_PORT=8000

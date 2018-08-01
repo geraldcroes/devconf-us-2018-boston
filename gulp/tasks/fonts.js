@@ -3,10 +3,8 @@
 module.exports = function (gulp, plugins, current_config) {
     'use strict';
     gulp.task('fonts', function () {
-        return gulp.src([
-            current_config.fontSrcPath  + '/web/*'
-        ])
-            .pipe(gulp.dest(current_config.webResourcesDirName))
+        return gulp.src([current_config.fontSrcPath])
+            .pipe(gulp.dest(current_config.distDir))
             .pipe(plugins.connect.reload());
     });
 };
