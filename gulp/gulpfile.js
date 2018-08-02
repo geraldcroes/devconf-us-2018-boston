@@ -52,8 +52,7 @@ gulp.task('build:html', gulp.series(
         'favicon',
         'prepare:js-revealjs',
         'prepare:js-highlightjs',
-        'images:styles',
-        'styles:slides'
+        'styles'
     ),
     'html:slides'
 ));
