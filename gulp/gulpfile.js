@@ -20,7 +20,9 @@ var tasks_dir_path = './tasks',
         fs: require('fs'),
         path: require('path'),
         w3cjs: require('gulp-w3cjs'),
-        sass: require('gulp-sass')
+        sass: require('gulp-sass'),
+        asciidoctor: require('asciidoctor.js')(),
+        asciidoctorRevealjs: require('asciidoctor-reveal.js')
     },
     current_config = {
         docinfosPath: '/app/slides/docinfos',
