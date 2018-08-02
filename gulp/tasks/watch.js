@@ -21,7 +21,7 @@ module.exports = function (gulp, plugins, current_config) {
 
         // Watch Styles and Fonts
         gulp.watch([
-            current_config.stylesSrcPath + '/slides/**/*.scss',
+            current_config.stylesSrcPath + '/**/*.scss',
         ], gulp.series('styles'));
 
         gulp.watch(current_config.fontSrcPath + '/*', gulp.series('fonts'));
