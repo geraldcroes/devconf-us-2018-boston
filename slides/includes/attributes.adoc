@@ -5,7 +5,7 @@
 :linkattrs:
 :idprefix:
 :images_dir: images
-:revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
+// :revealjsdir: https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.6.0
 :revealjs_theme: solarized
 :revealjs_history: true
 :revealjs_margin: 0.1
