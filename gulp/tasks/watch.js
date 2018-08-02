@@ -6,8 +6,8 @@ module.exports = function (gulp, plugins, current_config) {
         // Watch for AsciiDoctor sources
         gulp.watch([
             current_config.sourcesDir + '/**/*.adoc', // AsciiDoctor sources
-            current_config.sourcesDir + '/*.html' // Docinfos
-        ], gulp.series('build:html'));
+            current_config.docinfosPath + '/**/*.html' // Docinfos
+        ], gulp.series('html'));
 
         // Watch for images
         gulp.watch([current_config.faviconPath], gulp.series('favicon'));

@@ -2,11 +2,11 @@
 
 module.exports = function (gulp, plugins, current_config) {
     'use strict';
-    gulp.task('html:slides', function (done) {
+    gulp.task('html', function (done) {
 
         var attributes = {
             'revealjsdir': 'node_modules/reveal.js@',
-            'docinfosPath': current_config.docinfosPath
+            'docinfosPath': current_config.docinfosPath,
         },
             options = {
                 safe: 'unsafe',

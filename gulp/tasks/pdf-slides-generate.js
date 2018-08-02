@@ -1,7 +1,7 @@
 /*jslint node: true, stupid: true */
 module.exports = function (gulp, plugins, current_config) {
     'use strict';
-    gulp.task('pdf:slides-generate', function () {
+    gulp.task('pdf-generate', function () {
         return gulp.src([current_config.slidesEntrypointPath])
             .pipe(plugins.exec(current_config.get_asciidoctor_revealjs_html_command(
                 '<%= file.path %>',

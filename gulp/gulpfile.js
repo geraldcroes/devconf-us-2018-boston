@@ -54,15 +54,13 @@ gulp.task('build:html', gulp.series(
         'prepare:js-highlightjs',
         'styles'
     ),
-    'html:slides'
+    'html'
 ));
 
 
 gulp.task('dist', gulp.series('build:html', 'dist:copy'));
 
-gulp.task('pdf:slides', gulp.series('build:html', 'pdf:slides-generate'));
-
-gulp.task('build:pdf', gulp.parallel('pdf:slides'));
+gulp.task('pdf', gulp.series('build:html', 'pdf-generate'));
 
 gulp.task('verify', gulp.parallel('verify:w3c', 'verify:links'));
 
