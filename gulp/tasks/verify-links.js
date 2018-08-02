@@ -6,7 +6,7 @@ module.exports = function (gulp, plugins, current_config) {
         return gulp.src([current_config.distDir + '/*.html'])
             .pipe(plugins.exec(
                 'htmlproofer --check-html --check-sri' +
-                    ' --url-ignore "/github.com/cloudbees/training-*/,/localhost:/,/127.0.0.1:/,/cjmaster1:/,/jenkins:/,/www.virtualbox.org/" ' +
+                    ' --url-ignore "/localhost:/,/127.0.0.1:/" ' +
                     ' "<%= file.path %>"',
                 { pipeStdout: false}
             ))
