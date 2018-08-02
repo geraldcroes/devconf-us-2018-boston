@@ -51,7 +51,7 @@ module.exports = function (gulp, plugins, current_config) {
                 }))
                 .pipe(gulp.dest(highlightDestDir + '/styles/')),
             highlightScriptMinified = gulp.src(highlightNodeModule + '/highlight.pack.min.js')
-                .pipe(plugins.rename('highlight.min.js'))
+                .pipe(plugins.rename('highlight.js'))
                 .pipe(gulp.dest(highlightDestDir));
 
         return plugins.mergeStreams(highlightjsStyleRename, highlightScriptMinified);

@@ -14,138 +14,138 @@ DevConf.in - Bengaluru - 2018
 * Docker mentor.
 * Human stack focused. Rock climber. Passionated. Talk to me!
 
-image::{images_dir}/damien.jpg[height=200]
+image::{imagesdir}/damien.jpg[height=200]
 
 == Træfik
 
-image::{images_dir}/traefik-logo.svg[Træfik's Logo]
+image::{imagesdir}/traefik-logo.svg[Træfik's Logo]
 
 == Part 1 - Why?
 
-image::{images_dir}/why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
+image::{imagesdir}/why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
 
 Why, Mr Anderson?
 
 == Evolution of Software Design
 
-image::{images_dir}/evolution-of-software-design.jpg[Evolution of Software Design]
+image::{imagesdir}/evolution-of-software-design.jpg[Evolution of Software Design]
 
 == The Premise of Microservices...
 
-image::{images_dir}/asterix-premise.jpg[Asterix - Premise]
+image::{imagesdir}/asterix-premise.jpg[Asterix - Premise]
 
 == ...and what happens
 
-image::{images_dir}/asterix-fight.jpg[Asterix - Fighting]
+image::{imagesdir}/asterix-fight.jpg[Asterix - Fighting]
 
 == !
 
-image::{images_dir}/yes-help-please.jpg[Asterix - Fighting]
+image::{imagesdir}/yes-help-please.jpg[Asterix - Fighting]
 
 == Where is the service?
 
-image::{images_dir}/where-is-charlie.jpg["Where os Charlie?",width=900]
+image::{imagesdir}/where-is-charlie.jpg["Where os Charlie?",width=900]
 
 == Tools of the Trade
 
-image::{images_dir}/docker.png[width=80,float=left]
-image::{images_dir}/docker-swarm.png[width=80,float=left]
-image::{images_dir}/kubernetes.png[width=80,float=left]
-image::{images_dir}/mesos.png[width=80,float=left]
-image::{images_dir}/marathon.png[width=80,float=left]
-image::{images_dir}/rancher-os.png[width=80,float=left]
-image::{images_dir}/ec2.png[width=80,float=left]
-image::{images_dir}/ecs.png[width=80,float=left]
-image::{images_dir}/service-fabric.png[width=80,float=left]
-image::{images_dir}/consul.png[width=80,float=left]
-image::{images_dir}/netflix_oss.png[width=80,float=left]
-image::{images_dir}/etcd.png[width=80,float=left]
-image::{images_dir}/zookeeper.png[width=80,float=left]
-image::{images_dir}/dynamodb.png[width=80,float=left]
+image::{imagesdir}/docker.png[width=80,float=left]
+image::{imagesdir}/docker-swarm.png[width=80,float=left]
+image::{imagesdir}/kubernetes.png[width=80,float=left]
+image::{imagesdir}/mesos.png[width=80,float=left]
+image::{imagesdir}/marathon.png[width=80,float=left]
+image::{imagesdir}/rancher-os.png[width=80,float=left]
+image::{imagesdir}/ec2.png[width=80,float=left]
+image::{imagesdir}/ecs.png[width=80,float=left]
+image::{imagesdir}/service-fabric.png[width=80,float=left]
+image::{imagesdir}/consul.png[width=80,float=left]
+image::{imagesdir}/netflix_oss.png[width=80,float=left]
+image::{imagesdir}/etcd.png[width=80,float=left]
+image::{imagesdir}/zookeeper.png[width=80,float=left]
+image::{imagesdir}/dynamodb.png[width=80,float=left]
 
 == What If I Told You?
 
-image::{images_dir}/what-if-I-told-you.jpg[What If I Told You]
+image::{imagesdir}/what-if-I-told-you.jpg[What If I Told You]
 
 That You Don't Have to Write This Configuration File...?
 
 == Here Comes Træfik!
 
-image::{images_dir}/traefik-architecture.svg[Træfik Architecture]
+image::{imagesdir}/traefik-architecture.svg[Træfik Architecture]
 
 == Part 2 - Core Concepts
 
-image::{images_dir}/bored-minion.jpg[Bored Minion]
+image::{imagesdir}/bored-minion.jpg[Bored Minion]
 
 == Remember the Diagram?
 
-image::{images_dir}/traefik-architecture.svg[Træfik's Architecture]
+image::{imagesdir}/traefik-architecture.svg[Træfik's Architecture]
 
 == Let's Simplify
 
-image::{images_dir}/architecture-simplified.svg[Træfik's Simplified Architecture]
+image::{imagesdir}/architecture-simplified.svg[Træfik's Simplified Architecture]
 
 == Providers
 
-image::{images_dir}/architecture-at-a-glance-provider.svg[Træfik's Simplified Architecture]
+image::{imagesdir}/architecture-at-a-glance-provider.svg[Træfik's Simplified Architecture]
 
 == Entrypoints
 
-image::{images_dir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", height=500]
+image::{imagesdir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", height=500]
 
 == Backends
 
-image::{images_dir}/architecture-at-a-glance-backends.svg[Træfik's Backends]
+image::{imagesdir}/architecture-at-a-glance-backends.svg[Træfik's Backends]
 
 == Frontends
 
-image::{images_dir}/architecture-at-a-glance-frontends.svg[Træfik's Frontends]
+image::{imagesdir}/architecture-at-a-glance-frontends.svg[Træfik's Frontends]
 
 == At a Glance
 
-image::{images_dir}/architecture-at-a-glance.svg[Træfik Architecture At A Glance]
+image::{imagesdir}/architecture-at-a-glance.svg[Træfik Architecture At A Glance]
 
 == In Practice
 
-image::{images_dir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
+image::{imagesdir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 
 == End of Part 2
 
-image::{images_dir}/happy-minions.jpg[Happy Minions]
+image::{imagesdir}/happy-minions.jpg[Happy Minions]
 
 == Part 3 - Hands On
 
-image::{images_dir}/matrix-neo.jpg[Matrix Neo]
+image::{imagesdir}/matrix-neo.jpg[Matrix Neo]
 
 == Deploying a Chat
 
-image::{images_dir}/demo-example-1.png[Demo Example 1]
+image::{imagesdir}/demo-example-1.png[Demo Example 1]
 
 == Træfik's Web Dashboard: Frontends
 
-image::{images_dir}/web.frontend.png[Træfik's Web Dashboard: Frontends]
+image::{imagesdir}/web.frontend.png[Træfik's Web Dashboard: Frontends]
 
 == Træfik's Web Dashboard: Health
 
-image::{images_dir}/traefik-health.png[Træfik's Web Dashboard: Health]
+image::{imagesdir}/traefik-health.png[Træfik's Web Dashboard: Health]
 
 == The Cross-Origin Conundrum
 
-image::{images_dir}/demo-example-2.png[Demo Example 2]
+image::{imagesdir}/demo-example-2.png[Demo Example 2]
 
 == The HTTP Challenge
 
-image::{images_dir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
+image::{imagesdir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
 
 == The DNS Challenge
 
-image::{images_dir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
+image::{imagesdir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
 
 == Season 2: TRAILER
 
 == !
 
-image::{images_dir}/kubernetes-logo.png[Kubernetes Logo]
+image::{imagesdir}/kubernetes-logo.png[Kubernetes Logo]
 
 == Coming soon in Træfik
 
