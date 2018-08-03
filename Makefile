@@ -3,12 +3,7 @@ all: documents verify
 
 # Generate docuemnts inside a container, all *.adoc in parallel
 documents:
-	@docker run --rm \
-		-v $(CURDIR)/slides:/documents \
-		-v $(CURDIR)/dist:/dist \
-		asciidoctor/docker-asciidoctor:latest bash -c \
-			"find /documents -type f -name '*.adoc' -maxdepth 1 \
-			| xargs -I {} asciidoctor-revealjs {} --destination-dir /dist"
+	@docker-compose up --build --force-recreate -d build-html
 
 verify: verify-links verify-w3c
 
@@ -31,4 +26,4 @@ shell:
 	@docker-compose up --build --force-recreate -d shell
 	@docker-compose exec shell sh
 
-.PHONY: all documents verify verify-links verify-w3c
+.PHONY: all documents verify verify-links verify-w3c serve

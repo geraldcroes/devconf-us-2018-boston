@@ -10,17 +10,21 @@
 // @import url(../../lib/font/league-gothic/league-gothic.css);
 // @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
-/* Webfont: Lobster Two Regular */
+
+/* Montserrat - latin */
 @font-face {
-    font-family: 'Lobster Two Regular';
-    src: url('/fonts/lobster-two-v10-latin-regular.eot'); /* IE9 Compat Modes */
-    src: url('/fonts/lobster-two-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('/fonts/lobster-two-v10-latin-regular.woff2') format('woff2'), /* Modern Browsers */
-         url('/fonts/lobster-two-v10-latin-regular.woff') format('woff'); /* Modern Browsers */
-    font-style: normal;
-    font-weight: normal;
-    text-rendering: optimizeLegibility;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/montserrat-v12-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('/fonts/montserrat-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/fonts/montserrat-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/fonts/montserrat-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/fonts/montserrat-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/fonts/montserrat-v12-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+
 /* Webfont: Rancho */
 @font-face {
     font-family: 'Rancho';
@@ -32,6 +36,28 @@
     font-weight: normal;
     text-rendering: optimizeLegibility;
 }
+
+.reveal section[data-state="invert"] p,
+.reveal section[data-state="invert"] ul,
+.reveal section[data-state="invert"] li {
+    color: black; }
+
+.reveal section[data-state="invert"] h1,
+.reveal section[data-state="invert"] h2 {
+    color: rgb(55, 171, 200); }
+
+.reveal section[data-state="invert"] a {
+    color: #78b9e6; }
+
+.reveal section[data-state="invert"] a:hover {
+    color: rgba(33, 15, 78, 0.85); }
+
+.reveal .controls section[data-state="invert"]{
+  color: rgb(55, 171, 200); }
+
+.reveal .progress section[data-state="invert"]{
+  background: rgba(0, 0, 0, 0.2);
+  color: rgb(55, 171, 200); }
 
 html * {
   color-profile: sRGB;
@@ -45,7 +71,7 @@ body {
   background-color: #37ABC8; }
 
 .reveal {
-  font-family: "Lobster Two Regular", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #e2e2e2; }
@@ -237,7 +263,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #268bd2;
+  color: rgba(33, 15, 78, 0.85);;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -279,14 +305,14 @@ body {
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: #268bd2; }
+  color: #e2e2e2; }
 
 /*********************************************
  * PROGRESS BAR
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: #268bd2; }
+  color: #e2e2e2; }
 
 .reveal .progress span {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);

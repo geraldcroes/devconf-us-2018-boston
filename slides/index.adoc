@@ -6,6 +6,7 @@ Damien DUPORTAL
 
 DevConf.in - Bengaluru - 2018
 
+[{invert}]
 == Whoami
 
 * Damien DUPORTAL - link:https://twitter.com/DamienDuportal[@DamienDuportal].
@@ -69,74 +70,86 @@ image::{imagesdir}/what-if-I-told-you.jpg[What If I Told You]
 
 That You Don't Have to Write This Configuration File...?
 
+[{invert}]
 == Here Comes Træfik!
 
-image::{imagesdir}/traefik-architecture.svg[Træfik Architecture]
+image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]
 
 == Part 2 - Core Concepts
 
 image::{imagesdir}/bored-minion.jpg[Bored Minion]
 
+[{invert}]
 == Remember the Diagram?
 
-image::{imagesdir}/traefik-architecture.svg[Træfik's Architecture]
+image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]
 
+[{invert}]
 == Let's Simplify
 
-image::{imagesdir}/architecture-simplified.svg[Træfik's Simplified Architecture]
+image::{imagesdir}/architecture-simplified.svg["Træfik's Simplified Architecture",width=900]
 
+[{invert}]
 == Providers
 
-image::{imagesdir}/architecture-at-a-glance-provider.svg[Træfik's Simplified Architecture]
+image::{imagesdir}/architecture-at-a-glance-provider.svg["Træfik's Simplified Architecture",width=900]
 
+[{invert}]
 == Entrypoints
 
-image::{imagesdir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", height=500]
+image::{imagesdir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", width=900]
 
+[{invert}]
 == Backends
 
-image::{imagesdir}/architecture-at-a-glance-backends.svg[Træfik's Backends]
+image::{imagesdir}/architecture-at-a-glance-backends.svg["Træfik's Backends",width=900]
 
+[{invert}]
 == Frontends
 
-image::{imagesdir}/architecture-at-a-glance-frontends.svg[Træfik's Frontends]
+image::{imagesdir}/architecture-at-a-glance-frontends.svg["Træfik's Frontends",width=900]
 
+[{invert}]
 == At a Glance
 
-image::{imagesdir}/architecture-at-a-glance.svg[Træfik Architecture At A Glance]
+image::{imagesdir}/architecture-at-a-glance.svg["Træfik Architecture At A Glance",width=900]
 
+[{invert}]
 == In Practice
 
 image::{imagesdir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 
 == End of Part 2
 
-image::{imagesdir}/happy-minions.jpg[Happy Minions]
+image::{imagesdir}/happy-minions.jpg["Happy Minions",width=900]
 
 == Part 3 - Hands On
 
-image::{imagesdir}/matrix-neo.jpg[Matrix Neo]
+image::{imagesdir}/matrix-neo.jpg["Matrix Neo"]
 
+[{invert}]
 == Deploying a Chat
 
-image::{imagesdir}/demo-example-1.png[Demo Example 1]
+image::{imagesdir}/demo-example-1.png["Demo Example 1"]
 
 == Træfik's Web Dashboard: Frontends
 
-image::{imagesdir}/web.frontend.png[Træfik's Web Dashboard: Frontends]
+image::{imagesdir}/web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
 
 == Træfik's Web Dashboard: Health
 
-image::{imagesdir}/traefik-health.png[Træfik's Web Dashboard: Health]
+image::{imagesdir}/traefik-health.png["Træfik's Web Dashboard: Health",width=900]
 
+[{invert}]
 == The Cross-Origin Conundrum
 
-image::{imagesdir}/demo-example-2.png[Demo Example 2]
+image::{imagesdir}/demo-example-2.png["Demo Example 2",width=500]
 
 == The HTTP Challenge
 
 image::{imagesdir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
 
+[{invert}]
 == The DNS Challenge
 
 image::{imagesdir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
