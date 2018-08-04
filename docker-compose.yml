@@ -4,37 +4,20 @@ version: '3.4'
 x-slides-base: &slides-base
   build: ./
   image: traefik-presentation-slides-builder
-  expose:
-      - "8000"
-      - "35729"
   volumes:
       - ./slides:/app/slides
       - ./dist:/app/dist
       - ./assets:/app/assets
+      - ./gulp/gulpfile.js:/app/gulpfile.js
+      - ./gulp/tasks:/app/tasks
 
 services:
   serve:
     <<: *slides-base
-    command: "default"
     ports:
         - "8000:8000"
         - "35729:35729"
 
-  shell:
+  build:
     <<: *slides-base
-    entrypoint: /bin/sh
-    stdin_open: true
-    tty: true
-    ports:
-        - "8000:8000"
-        - "35729:35729"
-    volumes:
-        - ./slides:/app/slides
-        - ./dist:/app/dist
-        - ./assets:/app/assets
-        - ./gulp/gulpfile.js:/app/gulpfile.js
-        - ./gulp/tasks:/app/tasks
-
-  build-html:
-    <<: *slides-base
-    command: "build:html"
+    command: "build"

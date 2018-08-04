@@ -2,8 +2,12 @@
 all: clean documents verify
 
 # Generate docuemnts inside a container, all *.adoc in parallel
-documents:
-	@docker-compose up --build --force-recreate -d build-html
+documents: clean
+	@docker-compose up \
+		--build \
+		--force-recreate \
+		--exit-code-from build \
+	build
 
 verify: verify-links verify-w3c
 
@@ -14,17 +18,17 @@ verify-links:
 			--check-html \
 			--http-status-ignore "999" \
 			--url-ignore "/localhost:/,/127.0.0.1:/" \
-        /dist/index.html
+        	/dist/index.html
 
 verify-w3c:
-	@docker run --rm -v $(CURDIR)/dist:/app stratdat/html5validator
+	docker run --rm -v $(CURDIR)/dist:/app stratdat/html5validator
 
-serve:
-	@docker-compose up --build --force-recreate -d serve
+serve: clean
+	@docker-compose up --build --force-recreate serve
 
 shell:
-	@docker-compose up --build --force-recreate -d shell
-	@docker-compose exec shell sh
+	@docker-compose up --build --force-recreate -d serve
+	@docker-compose exec serve sh
 
 clean:
 	@docker-compose down -v --remove-orphans

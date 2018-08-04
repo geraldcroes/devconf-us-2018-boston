@@ -4,6 +4,7 @@ services:
 
 script:
 - make documents
+- make verify
 
 deploy:
   provider: pages

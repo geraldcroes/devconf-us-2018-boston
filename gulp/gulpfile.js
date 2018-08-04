@@ -12,14 +12,10 @@ var tasks_dir_path = './tasks',
         connect: require('gulp-connect'),
         csso: require('gulp-csso'),
         exec: require('gulp-exec'),
-        header: require('gulp-header'),
-        gulpIgnore: require('gulp-ignore'),
         rename: require('gulp-rename'),
-        template: require('gulp-template'),
         mergeStreams: require('merge-stream'),
         fs: require('fs'),
         path: require('path'),
-        w3cjs: require('gulp-w3cjs'),
         sass: require('gulp-sass'),
         asciidoctor: require('asciidoctor.js')(),
         asciidoctorRevealjs: require('asciidoctor-reveal.js')
@@ -45,7 +41,7 @@ fs.readdirSync(tasks_dir_path).forEach(function (file) {
 });
 
 
-gulp.task('build:html', gulp.series(
+gulp.task('build', gulp.series(
     gulp.parallel(
         'fonts',
         'images',
@@ -57,13 +53,8 @@ gulp.task('build:html', gulp.series(
     'html'
 ));
 
-
-gulp.task('dist', gulp.series('build:html', 'dist:copy'));
-
-gulp.task('pdf', gulp.series('build:html', 'pdf-generate'));
-
-gulp.task('verify', gulp.parallel('verify:w3c', 'verify:links'));
+gulp.task('pdf', gulp.series('build', 'pdf-generate'));
 
 gulp.task('serve', gulp.parallel('connect', 'watch'));
 
-gulp.task('default', gulp.series('clean', 'build:html', 'serve'));
+gulp.task('default', gulp.series('clean', 'build', 'serve'));
