@@ -1,5 +1,5 @@
 
-= Part 2 - Core Concepts
+= Træfik Core Concepts
 
 image::{imagesdir}/bored-minion.jpg[Bored Minion]
 
@@ -43,6 +43,6 @@ image::{imagesdir}/architecture-at-a-glance.svg["Træfik Architecture At A Glanc
 
 image::{imagesdir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 
-== End of Part 2
+== End of Core Concepts
 
 image::{imagesdir}/happy-minions.jpg["Happy Minions",width=900]

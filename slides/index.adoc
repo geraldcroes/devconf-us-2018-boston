@@ -1,38 +1,48 @@
 
-= Reverse Proxy Made Simple
+= Træfik: The Cloud Native Edge Router
 include::./includes/attributes.adoc[]
 
-Damien DUPORTAL
+image::{imagesdir}/traefik-logo-white-background.png["Træfik's Logo",height=200]
 
-DevConf.in - Bengaluru - 2018
+[.small]
+**DevConf.in** - India (Bangalore) - 2018
 
-[{invert}]
+// //// Speaker Slide and Company slide
 == Whoami
 
-* Damien DUPORTAL - link:https://twitter.com/DamienDuportal[@DamienDuportal].
-* Træfik's Developer Advocate @ Containous and Freelancer.
-* Former Training Engineer @ CloudBees.
-* Docker mentor.
+* Damien DUPORTAL - link:https://twitter.com/DamienDuportal[@DamienDuportal]
+* Træfik's Developer Advocate @ Containous and Freelancer
+* Former Training Engineer @ CloudBees
+* Docker mentor
 * Human stack focused. Rock climber. Passionated. Talk to me!
 
-image::{imagesdir}/damien.jpg[height=200]
+image::{imagesdir}/damien.jpg[height=250]
 
-== Træfik
+== Containous
 
-image::{imagesdir}/traefik-logo.svg[Træfik's Logo]
+* link:https://containo.us[]
+* We Believe in Open Source
+* We Deliver Træfik
+* Commercial Support for Træfik
+* 12 people, 90% technical experts
 
+image::{imagesdir}/containous-logo.png["Containous Logo"]
+// //// end of Speaker Slide and Company slide
+
+
+// ///////////////////////
 // Include chapter here with a blank line between each
 // Notice the offset to have chapters as autonomous documents
-
+// ///////////////////////
 :leveloffset: +1
 
-include::./includes/part1.adoc[]
+include::./includes/traefik-project.adoc[]
 
-include::./includes/part2.adoc[]
+include::./includes/why-traefik.adoc[]
 
-include::./includes/part3.adoc[]
+include::./includes/traefik-core-concepts.adoc[]
 
-include::./includes/part4.adoc[]
+include::./includes/more-capabilities.adoc[]
 
 :leveloffset: -1
 
