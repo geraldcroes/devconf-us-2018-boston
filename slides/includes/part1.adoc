@@ -1,0 +1,57 @@
+
+= Part 1 - Why?
+
+image::{imagesdir}/why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
+
+Why, Mr Anderson?
+
+== Evolution of Software Design
+
+image::{imagesdir}/evolution-of-software-design.jpg[Evolution of Software Design]
+
+== The Premise of Microservices...
+
+image::{imagesdir}/asterix-premise.jpg[Asterix - Premise]
+
+== ...and what happens
+
+image::{imagesdir}/asterix-fight.jpg[Asterix - Fighting]
+
+== !
+
+image::{imagesdir}/yes-help-please.jpg[Asterix - Fighting]
+
+== Where is the service?
+
+image::{imagesdir}/where-is-charlie.jpg["Where os Charlie?",width=900]
+
+[{invert}]
+== Tools of the Trade
+
+image::{imagesdir}/docker.png[width=80,float=left]
+image::{imagesdir}/rancher-os.png[width=80,float=left]
+image::{imagesdir}/docker-swarm.png[width=80,float=left]
+image::{imagesdir}/kubernetes.png[width=80,float=left]
+image::{imagesdir}/marathon.png[width=80,float=left]
+image::{imagesdir}/ec2.png[width=80,float=left]
+image::{imagesdir}/mesos.png[width=80,float=left]
+
+image::{imagesdir}/dynamodb.png[width=80,float=right]
+image::{imagesdir}/ecs.png[width=80,float=right]
+image::{imagesdir}/service-fabric.png[width=80,float=right]
+image::{imagesdir}/consul.png[width=80,float=right]
+image::{imagesdir}/netflix_oss.png[width=80,float=right]
+image::{imagesdir}/etcd.png[width=80,float=right]
+image::{imagesdir}/zookeeper.png[width=80,float=right]
+
+
+== What If I Told You?
+
+image::{imagesdir}/what-if-I-told-you.jpg[What If I Told You]
+
+That You Don't Have to Write This Configuration File...?
+
+[{invert}]
+== Here Comes Træfik!
+
+image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]

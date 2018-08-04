@@ -21,181 +21,19 @@ image::{imagesdir}/damien.jpg[height=200]
 
 image::{imagesdir}/traefik-logo.svg[Træfik's Logo]
 
-== Part 1 - Why?
+// Include chapter here with a blank line between each
+// Notice the offset to have chapters as autonomous documents
 
-image::{imagesdir}/why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
+:leveloffset: +1
 
-Why, Mr Anderson?
+include::./includes/part1.adoc[]
 
-== Evolution of Software Design
+include::./includes/part2.adoc[]
 
-image::{imagesdir}/evolution-of-software-design.jpg[Evolution of Software Design]
+include::./includes/part3.adoc[]
 
-== The Premise of Microservices...
+include::./includes/part4.adoc[]
 
-image::{imagesdir}/asterix-premise.jpg[Asterix - Premise]
-
-== ...and what happens
-
-image::{imagesdir}/asterix-fight.jpg[Asterix - Fighting]
-
-== !
-
-image::{imagesdir}/yes-help-please.jpg[Asterix - Fighting]
-
-== Where is the service?
-
-image::{imagesdir}/where-is-charlie.jpg["Where os Charlie?",width=900]
-
-[{invert}]
-== Tools of the Trade
-
-image::{imagesdir}/docker.png[width=80,float=left]
-image::{imagesdir}/rancher-os.png[width=80,float=left]
-image::{imagesdir}/docker-swarm.png[width=80,float=left]
-image::{imagesdir}/kubernetes.png[width=80,float=left]
-image::{imagesdir}/marathon.png[width=80,float=left]
-image::{imagesdir}/ec2.png[width=80,float=left]
-image::{imagesdir}/mesos.png[width=80,float=left]
-
-image::{imagesdir}/dynamodb.png[width=80,float=right]
-image::{imagesdir}/ecs.png[width=80,float=right]
-image::{imagesdir}/service-fabric.png[width=80,float=right]
-image::{imagesdir}/consul.png[width=80,float=right]
-image::{imagesdir}/netflix_oss.png[width=80,float=right]
-image::{imagesdir}/etcd.png[width=80,float=right]
-image::{imagesdir}/zookeeper.png[width=80,float=right]
-
-
-== What If I Told You?
-
-image::{imagesdir}/what-if-I-told-you.jpg[What If I Told You]
-
-That You Don't Have to Write This Configuration File...?
-
-[{invert}]
-== Here Comes Træfik!
-
-image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]
-
-== Part 2 - Core Concepts
-
-image::{imagesdir}/bored-minion.jpg[Bored Minion]
-
-[{invert}]
-== Remember the Diagram?
-
-image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]
-
-[{invert}]
-== Let's Simplify
-
-image::{imagesdir}/architecture-simplified.svg["Træfik's Simplified Architecture",width=900]
-
-[{invert}]
-== Providers
-
-image::{imagesdir}/architecture-at-a-glance-provider.svg["Træfik's Simplified Architecture",width=900]
-
-[{invert}]
-== Entrypoints
-
-image::{imagesdir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", width=900]
-
-[{invert}]
-== Backends
-
-image::{imagesdir}/architecture-at-a-glance-backends.svg["Træfik's Backends",width=900]
-
-[{invert}]
-== Frontends
-
-image::{imagesdir}/architecture-at-a-glance-frontends.svg["Træfik's Frontends",width=900]
-
-[{invert}]
-== At a Glance
-
-image::{imagesdir}/architecture-at-a-glance.svg["Træfik Architecture At A Glance",width=900]
-
-[{invert}]
-== In Practice
-
-image::{imagesdir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
-
-== End of Part 2
-
-image::{imagesdir}/happy-minions.jpg["Happy Minions",width=900]
-
-== Part 3 - Hands On
-
-image::{imagesdir}/matrix-neo.jpg["Matrix Neo"]
-
-[{invert}]
-== Deploying a Chat
-
-image::{imagesdir}/demo-example-1.png["Demo Example 1"]
-
-== Træfik's Web Dashboard: Frontends
-
-image::{imagesdir}/web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
-
-== Træfik's Web Dashboard: Health
-
-image::{imagesdir}/traefik-health.png["Træfik's Web Dashboard: Health",width=900]
-
-[{invert}]
-== The Cross-Origin Conundrum
-
-image::{imagesdir}/demo-example-2.png["Demo Example 2",width=500]
-
-== The HTTP Challenge
-
-image::{imagesdir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
-
-[{invert}]
-== The DNS Challenge
-
-image::{imagesdir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
-
-== Season 2: TRAILER
-
-== !
-
-image::{imagesdir}/kubernetes-logo.png[Kubernetes Logo]
-
-== Coming soon in Træfik
-
-== Already available in Træfik
-
-++++
-<span data-radium="true" style="text-decoration: line-through;">Coming soon</span>
-++++
-
-== Part 4 Before We Leave
-
-== We Missed Talking About ...
-GRPC CIRCUIT BREAKERS
-CLUSTER MODE HEALTH CHECKS
-SSL REDIRECT AUTH FORWARD CUSTOM ERROR PAGES CUSTOM HEADERS
-PROXY PROTOCOL IMAGE DOCKER MULTI ARCH HSTS
-RATE LIMITING DYNAMIC TLS CERTIFICATE
-WILDCARD CERTIFICATES ZIPKIN KUBERNETES SECRETS
-
-== The Project
-
-* https://github.com/containous/traefik
-* 16,600+ ⭐
-* 100M+ ⬇️
-* 1400+ LGTM
-* 280+ 👷
-
-== I've Found A Bug!
-
-[source,bash]
-----
-./traefik bug
-----
-
-Autofills the issue template (environment, configuration files, ...)
+:leveloffset: -1
 
 == Thank You!

@@ -1,0 +1,27 @@
+
+= Part 4 Before We Leave
+
+== We Missed Talking About ...
+GRPC CIRCUIT BREAKERS
+CLUSTER MODE HEALTH CHECKS
+SSL REDIRECT AUTH FORWARD CUSTOM ERROR PAGES CUSTOM HEADERS
+PROXY PROTOCOL IMAGE DOCKER MULTI ARCH HSTS
+RATE LIMITING DYNAMIC TLS CERTIFICATE
+WILDCARD CERTIFICATES ZIPKIN KUBERNETES SECRETS
+
+== The Project
+
+* https://github.com/containous/traefik
+* 16,600+ ⭐
+* 100M+ ⬇️
+* 1400+ LGTM
+* 280+ 👷
+
+== I've Found A Bug!
+
+[source,bash]
+----
+./traefik bug
+----
+
+Autofills the issue template (environment, configuration files, ...)

@@ -1,0 +1,45 @@
+
+= Part 3 - Hands On
+
+image::{imagesdir}/matrix-neo.jpg["Matrix Neo"]
+
+[{invert}]
+== Deploying a Chat
+
+image::{imagesdir}/demo-example-1.png["Demo Example 1"]
+
+== Træfik's Web Dashboard: Frontends
+
+image::{imagesdir}/web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
+
+== Træfik's Web Dashboard: Health
+
+image::{imagesdir}/traefik-health.png["Træfik's Web Dashboard: Health",width=900]
+
+[{invert}]
+== The Cross-Origin Conundrum
+
+image::{imagesdir}/demo-example-2.png["Demo Example 2",width=500]
+
+== The HTTP Challenge
+
+image::{imagesdir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
+
+[{invert}]
+== The DNS Challenge
+
+image::{imagesdir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
+
+== Season 2: TRAILER
+
+== !
+
+image::{imagesdir}/kubernetes-logo.png[Kubernetes Logo]
+
+== Coming soon in Træfik
+
+== Already available in Træfik
+
+++++
+<span data-radium="true" style="text-decoration: line-through;">Coming soon</span>
+++++
