@@ -5,29 +5,20 @@ x-slides-base: &slides-base
   build: ./
   image: traefik-presentation-slides-builder
   expose:
-  - "8000"
-  - "35729"
-  # tmpfs:
-  # - /app/prepare-src
-  # - /app/docs-toolkit/.sass-cache
-  # - /root/.npm
-  # - /tmp
+      - "8000"
+      - "35729"
   volumes:
-  - ./slides:/app/slides
-  - ./dist:/app/dist
-  - ./assets:/app/assets
-  environment:
-  - LISTEN_IP=0.0.0.0
-  - LISTEN_PORT=8000
-  - LIVERELOAD_PORT=35729
+      - ./slides:/app/slides
+      - ./dist:/app/dist
+      - ./assets:/app/assets
 
 services:
   serve:
     <<: *slides-base
     command: "default"
     ports:
-    - "8000:8000"
-    - "35729:35729"
+        - "8000:8000"
+        - "35729:35729"
 
   shell:
     <<: *slides-base
@@ -35,14 +26,14 @@ services:
     stdin_open: true
     tty: true
     ports:
-    - "8000:8000"
-    - "35729:35729"
+        - "8000:8000"
+        - "35729:35729"
     volumes:
-    - ./slides:/app/slides
-    - ./dist:/app/dist
-    - ./assets:/app/assets
-    - ./gulp/gulpfile.js:/app/gulpfile.js
-    - ./gulp/tasks:/app/tasks
+        - ./slides:/app/slides
+        - ./dist:/app/dist
+        - ./assets:/app/assets
+        - ./gulp/gulpfile.js:/app/gulpfile.js
+        - ./gulp/tasks:/app/tasks
 
   build-html:
     <<: *slides-base
