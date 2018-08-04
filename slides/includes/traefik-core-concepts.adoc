@@ -1,48 +1,48 @@
 
 = Træfik Core Concepts
 
-image::{imagesdir}/bored-minion.jpg[Bored Minion]
+image::bored-minion.jpg[Bored Minion]
 
 [{invert}]
 == Remember the Diagram?
 
-image::{imagesdir}/traefik-architecture.svg["Træfik's Architecture",width=900]
+image::traefik-architecture.svg["Træfik's Architecture",width=900]
 
 [{invert}]
 == Let's Simplify
 
-image::{imagesdir}/architecture-simplified.svg["Træfik's Simplified Architecture",width=900]
+image::architecture-simplified.svg["Træfik's Simplified Architecture",width=900]
 
 [{invert}]
 == Providers
 
-image::{imagesdir}/architecture-at-a-glance-provider.svg["Træfik's Simplified Architecture",width=900]
+image::architecture-at-a-glance-provider.svg["Træfik's Simplified Architecture",width=900]
 
 [{invert}]
 == Entrypoints
 
-image::{imagesdir}/architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", width=900]
+image::architecture-at-a-glance-entrypoints.svg["Træfik's Entrypoints", width=900]
 
 [{invert}]
 == Backends
 
-image::{imagesdir}/architecture-at-a-glance-backends.svg["Træfik's Backends",width=900]
+image::architecture-at-a-glance-backends.svg["Træfik's Backends",width=900]
 
 [{invert}]
 == Frontends
 
-image::{imagesdir}/architecture-at-a-glance-frontends.svg["Træfik's Frontends",width=900]
+image::architecture-at-a-glance-frontends.svg["Træfik's Frontends",width=900]
 
 [{invert}]
 == At a Glance
 
-image::{imagesdir}/architecture-at-a-glance.svg["Træfik Architecture At A Glance",width=900]
+image::architecture-at-a-glance.svg["Træfik Architecture At A Glance",width=900]
 
 [{invert}]
 == In Practice
 
-image::{imagesdir}/architecture-at-a-glance-in-practice.svg[Træfik in Practise]
+image::architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 
 == End of Core Concepts
 
-image::{imagesdir}/happy-minions.jpg["Happy Minions",width=900]
+image::happy-minions.jpg["Happy Minions",width=900]

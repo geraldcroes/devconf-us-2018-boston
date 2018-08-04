@@ -4,7 +4,7 @@
 
 Træfik: The Cloud Native Edge Router
 
-image::{imagesdir}/traefik-logo.svg[Træfik's Logo]
+image::traefik-logo.svg[Træfik's Logo]
 
 == The Project
 

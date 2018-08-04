@@ -6,26 +6,26 @@
 
 == Træfik's Web Dashboard: Frontends
 
-image::{imagesdir}/web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
+image::web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
 
 == Træfik's Web Dashboard: Health
 
-image::{imagesdir}/traefik-health.png["Træfik's Web Dashboard: Health",width=900]
+image::traefik-health.png["Træfik's Web Dashboard: Health",width=900]
 
 == The HTTP Challenge
 
-image::{imagesdir}/lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
+image::lets-encrypt-http-challenge.png[Lets Encrypt HTTP Challenge]
 
 [{invert}]
 == The DNS Challenge
 
-image::{imagesdir}/lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
+image::lets-encrypt-dns-challenge.png[Lets Encrypt DNS Challenge]
 
 == Season 2: TRAILER
 
 == Kubernetes
 
-image::{imagesdir}/kubernetes-logo.png[Kubernetes Logo]
+image::kubernetes-logo.png[Kubernetes Logo]
 
 == Coming soon in Træfik
 

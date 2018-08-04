@@ -2,7 +2,7 @@
 = Træfik: The Cloud Native Edge Router
 include::./includes/attributes.adoc[]
 
-image::{imagesdir}/traefik-logo-white-background.png["Træfik's Logo",height=200]
+image::traefik-logo-white-background.png["Træfik's Logo",height=200]
 
 [.small]
 **DevConf.in** - India (Bangalore) - 2018
@@ -16,7 +16,7 @@ image::{imagesdir}/traefik-logo-white-background.png["Træfik's Logo",height=200
 * Docker mentor
 * Human stack focused. Rock climber. Passionated. Talk to me!
 
-image::{imagesdir}/damien.jpg[height=250]
+image::damien.jpg[height=250]
 
 == Containous
 
@@ -26,7 +26,7 @@ image::{imagesdir}/damien.jpg[height=250]
 * Commercial Support for Træfik
 * 12 people, 90% technical experts
 
-image::{imagesdir}/containous-logo.png["Containous Logo"]
+image::containous-logo.png["Containous Logo"]
 // //// end of Speaker Slide and Company slide
 
 
