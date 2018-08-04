@@ -47,22 +47,25 @@ image::{imagesdir}/yes-help-please.jpg[Asterix - Fighting]
 
 image::{imagesdir}/where-is-charlie.jpg["Where os Charlie?",width=900]
 
+[{invert}]
 == Tools of the Trade
 
 image::{imagesdir}/docker.png[width=80,float=left]
+image::{imagesdir}/rancher-os.png[width=80,float=left]
 image::{imagesdir}/docker-swarm.png[width=80,float=left]
 image::{imagesdir}/kubernetes.png[width=80,float=left]
-image::{imagesdir}/mesos.png[width=80,float=left]
 image::{imagesdir}/marathon.png[width=80,float=left]
-image::{imagesdir}/rancher-os.png[width=80,float=left]
 image::{imagesdir}/ec2.png[width=80,float=left]
-image::{imagesdir}/ecs.png[width=80,float=left]
-image::{imagesdir}/service-fabric.png[width=80,float=left]
-image::{imagesdir}/consul.png[width=80,float=left]
-image::{imagesdir}/netflix_oss.png[width=80,float=left]
-image::{imagesdir}/etcd.png[width=80,float=left]
-image::{imagesdir}/zookeeper.png[width=80,float=left]
-image::{imagesdir}/dynamodb.png[width=80,float=left]
+image::{imagesdir}/mesos.png[width=80,float=left]
+
+image::{imagesdir}/dynamodb.png[width=80,float=right]
+image::{imagesdir}/ecs.png[width=80,float=right]
+image::{imagesdir}/service-fabric.png[width=80,float=right]
+image::{imagesdir}/consul.png[width=80,float=right]
+image::{imagesdir}/netflix_oss.png[width=80,float=right]
+image::{imagesdir}/etcd.png[width=80,float=right]
+image::{imagesdir}/zookeeper.png[width=80,float=right]
+
 
 == What If I Told You?
 
