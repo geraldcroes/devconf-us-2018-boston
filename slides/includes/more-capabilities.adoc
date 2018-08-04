@@ -29,16 +29,45 @@ image::kubernetes-logo.png[Kubernetes Logo]
 
 == Coming soon in Træfik
 
-== Already available in Træfik
+[.line-trough-title]
+== Coming soon in Træfik
 
-++++
-<span data-radium="true" style="text-decoration: line-through;">Coming soon</span>
-++++
+Already available!
+
+[{invert}]
+== Træfik with Kubernetes
+
+image::traefik-kubernetes-diagram.png["Træfik with Kubernetes Diagram",width=900]
+
+[.small]
+Diagram from link:https://medium.com/@geraldcroes[]
+
+== Is Kubernetes Too Much YAML?
+
+We have Helm support - link:https://helm.sh/[]
+
+image:helm-logo.svg["Helm Logo",height=200]
+
+[source,bash]
+----
+# Kubernetes Ready
+kubectl get all
+...
+
+# Install Traefik into your Kubernetes cluster
+helm install stable/traefik
+
+# Start your service in Kubernetes
+kubectl apply -f ./myservice.yml
+----
 
 == We Missed Talking About ...
-GRPC CIRCUIT BREAKERS
-CLUSTER MODE HEALTH CHECKS
-SSL REDIRECT AUTH FORWARD CUSTOM ERROR PAGES CUSTOM HEADERS
-PROXY PROTOCOL IMAGE DOCKER MULTI-ARCH HSTS
-RATE LIMITING DYNAMIC TLS CERTIFICATE
-WILDCARD CERTIFICATES ZIPKIN KUBERNETES SECRETS
+
+* Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL...
+* Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
+CIRCUIT-BREAKERS, CLUSTER MODE ...
+* Security features, as in SSL, DYNAMIC/WILDCARD TLS CERTIFICATE,
+KUBERNETES SECRETS, AUTH FORWARD...
+* HTTP features, as in CUSTOM HEADERS, CUSTOM ERROR PAGES, REDIRECTS,
+PROXY PROTOCOL, HSTS, WEBSOCKETS...
+* Tracing and Metrics, as with ZIPKIN, JAEGER, PROMETHEUS...
