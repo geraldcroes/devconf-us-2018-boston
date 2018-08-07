@@ -17,4 +17,4 @@ deploy:
   target-branch: gh-pages
   verbose: true
   on:
-    branch: master
+    condition: [ -n "${TRAVIS_TAG}" ] || [ "${TRAVIS_BRANCH}" == "master"]
