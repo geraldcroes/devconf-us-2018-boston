@@ -1,7 +1,7 @@
 
 = Træfik Core Concepts
 
-image::bored-minion.jpg[Bored Minion]
+image::traefik-force-is-strong.png[]
 
 [{invert}]
 == Remember the Diagram?
