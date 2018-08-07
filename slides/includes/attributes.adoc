@@ -11,10 +11,6 @@
 :revealjs_height: 800
 :revealjs_minscale: 0.2
 :revealjs_maxscale: 1.5
-// :revealjs_width: 1400
-// :revealjs_height: 800
-// :revealjs_minscale: 0.2
-// :revealjs_maxscale: 0.8
 :revealjs_slideNumber: true
 :revealjs_controls: true
 :experimental: true
@@ -22,3 +18,4 @@
 :highlightjs-main-theme: github
 :highlightjs-theme: {revealjsdir}/plugin/highlight/styles/{highlightjs-main-theme}.min.css
 :invert: state=invert,background-color="rgb(226, 226, 226)"
+:icons: font
