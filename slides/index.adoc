@@ -11,13 +11,14 @@ Presentation available at link:https://dduportal.github.io/traefik-presentation/
 // //// Speaker Slide and Company slide
 == Whoami
 
-* Damien DUPORTAL - link:https://twitter.com/DamienDuportal[@DamienDuportal]
-* Træfik's Developer Advocate @ Containous and Freelancer
-* Former Training Engineer @ CloudBees
-* Docker mentor
-* Human stack focused. Rock climber. Passionated. Talk to me!
+* Damien DUPORTAL:
+** link:https://traefik.io/[Træfik]'s Developer Advocate @
+link:https://containo.us/[Containous] and Freelancer
+** Former Training Engineer @ CloudBees
+* link:https://twitter.com/DamienDuportal[icon:twitter[] @DamienDuportal]
+* link:https://github.com/dduportal[icon:github[] dduportal]
 
-image::damien.jpg[height=250]
+image::damien.jpg[height=200]
 
 == Containous
 
