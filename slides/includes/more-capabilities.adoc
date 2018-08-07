@@ -39,9 +39,6 @@ Already available!
 
 image::traefik-kubernetes-diagram.png["Træfik with Kubernetes Diagram",width=900]
 
-[.small]
-Diagram from link:https://medium.com/@geraldcroes[]
-
 == Is Kubernetes Too Much YAML?
 
 We have Helm support - link:https://helm.sh/[]
