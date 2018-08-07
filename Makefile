@@ -1,8 +1,8 @@
 
-all: clean documents verify
+all: clean build verify
 
 # Generate docuemnts inside a container, all *.adoc in parallel
-documents: clean
+build: clean
 	@docker-compose up \
 		--build \
 		--force-recreate \
@@ -34,4 +34,4 @@ clean:
 	@docker-compose down -v --remove-orphans
 	rm -rf $(CURDIR)/dist/*
 
-.PHONY: all documents verify verify-links verify-w3c serve
+.PHONY: all build verify verify-links verify-w3c serve
