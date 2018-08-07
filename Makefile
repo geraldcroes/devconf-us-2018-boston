@@ -1,5 +1,5 @@
 
-all: clean build verify deploy
+all: clean build verify
 
 # Generate docuemnts inside a container, all *.adoc in parallel
 build: clean
