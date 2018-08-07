@@ -1,4 +1,4 @@
-
+[{invert}]
 = Træfik Core Concepts
 
 image::traefik-force-is-strong.png[]
@@ -43,6 +43,7 @@ image::architecture-at-a-glance.svg["Træfik Architecture At A Glance",width=900
 
 image::architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 
+[{invert}]
 == End of Core Concepts
 
-image::happy-minions.jpg["Happy Minions",width=900]
+image::traefik-raclette.png["",width=350]
