@@ -1,5 +1,5 @@
 
-all: clean build verify
+all: clean build verify deploy
 
 # Generate docuemnts inside a container, all *.adoc in parallel
 build: clean
@@ -30,8 +30,11 @@ shell:
 	@docker-compose up --build --force-recreate -d serve
 	@docker-compose exec serve sh
 
+deploy:
+	@bash $(CURDIR)/scripts/travis-gh-deploy.sh
+
 clean:
 	@docker-compose down -v --remove-orphans
 	rm -rf $(CURDIR)/dist/*
 
-.PHONY: all build verify verify-links verify-w3c serve
+.PHONY: all build verify verify-links verify-w3c serve deploy
