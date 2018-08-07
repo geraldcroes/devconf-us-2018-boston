@@ -17,7 +17,7 @@ rm -f "./${ZIP_FILE}"
 # If a tag triggered the deploy, we deploy to a folder having the tag name
 # otherwise we are on master and we deploy into latest
 set +u
-if [ "${TRAVIS_TAG}" ]; then
+if [ -n "${TRAVIS_TAG}" ]; then
     DEPLOY_DIR="./docs/${TRAVIS_TAG}"
 else
     DEPLOY_DIR="./docs"
@@ -25,5 +25,4 @@ fi
 set -u
 
 rm -rf "${DEPLOY_DIR}"
-mkdir -p "${DEPLOY_DIR}"
-cp -r ./dist/* "${DEPLOY_DIR}/"
+mv ./dist "${DEPLOY_DIR}"
