@@ -1,7 +1,7 @@
 [{invert}]
 = Træfik Core Concepts
 
-image::traefik-force-is-strong.png[]
+image::traefik-must-learn.png[]
 
 [{invert}]
 == Remember the Diagram?
