@@ -6,7 +6,7 @@ image::traefik-logo-white-background.png["Træfik's Logo",height=150]
 
 // //// Speaker Slide and Company slide
 == Whoami
-* Gerald Croes - @geraldcroes link:https://twitter.com/geraldcroes[icon:twitter[]], link:https://medium.com/@geraldcroes[Medium], link:https://github.com/geraldcroes[GitHub]
+* Gerald Croes - @geraldcroes link:https://twitter.com/geraldcroes[icon:twitter[]] link:https://medium.com/@geraldcroes[icon:medium[]] link:https://github.com/geraldcroes[icon:github[]]
 * Senior Developer @ Containous
 * Former Chief Enterprise Architect for an Insurance Company
 * Passionate about Taekwondo ...
