@@ -3,7 +3,7 @@ version: '3.4'
 # Reusable options
 x-slides-base: &slides-base
   build: ./
-  image: traefik-presentation-slides-builder
+  image: devconf-us-2018-boston-slides-builder
   volumes:
       - ./slides:/app/slides
       - ./dist:/app/dist

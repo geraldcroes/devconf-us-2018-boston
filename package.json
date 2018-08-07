@@ -1,8 +1,8 @@
 {
-    "name": "traefik-presentation",
+    "name": "devconf-us-2018-boston",
     "version": "1.0.0",
     "description": "A presentation of Træfik, the Cloud native Edge Router.",
-    "repository": "https://github.com/dduportal/traefik-presentation",
+    "repository": "https://github.com/geraldcroes/devconf-us-2018-boston",
     "dependencies": {
         "highlightjs": "^9.10.0",
         "reveal.js": "3.7.0"

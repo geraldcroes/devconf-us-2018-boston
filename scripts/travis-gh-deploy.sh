@@ -3,8 +3,8 @@
 set -eux
 
 ZIP_FILE=gh-pages.zip
-REPOSITORY_NAME=traefik-presentation
-REPOSITORY_OWNER=dduportal
+REPOSITORY_NAME=devconf-us-2018-boston
+REPOSITORY_OWNER=geraldcroes
 REPOSITORY_URL="https://github.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/archive/${ZIP_FILE}"
 GH_PAGE_BASE_URL="https://${REPOSITORY_OWNER}.github.io/${REPOSITORY_NAME}"
 

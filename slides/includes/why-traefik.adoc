@@ -1,7 +1,7 @@
 
 = Why Træfik?
 
-image::why-mr-anderson.jpg["Why, Mr Anderson?",width=800]
+image::traefik-matrix.png["Why, Mr Anderson?",width=400]
 
 Why, Mr Anderson?
 
@@ -17,7 +17,7 @@ image::asterix-premise.jpg[Asterix - Premise]
 
 image::asterix-fight.jpg[Asterix - Fighting]
 
-== !
+== Nice But Unconfortable
 
 image::yes-help-please.jpg[Asterix - Fighting]
 
@@ -47,7 +47,7 @@ image::zookeeper.png[width=80,float=right]
 
 == What If I Told You?
 
-image::what-if-I-told-you.jpg[What If I Told You]
+image::traefik-matrix-pills.png[What If I Told You,width=350]
 
 That You Don't Have to Write This Configuration File...?
 
