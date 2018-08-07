@@ -5,6 +5,6 @@ module.exports = function (gulp, plugins, current_config) {
     gulp.task('favicon', function () {
         return gulp.src(current_config.faviconPath)
             .pipe(gulp.dest(current_config.distDir + '/'))
-            .pipe(plugins.connect.reload());
+            .pipe(plugins.browserSync.stream());
     });
 };

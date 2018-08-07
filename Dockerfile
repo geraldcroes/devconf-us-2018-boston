@@ -20,8 +20,8 @@ COPY ./gulp/gulpfile.js /app/gulpfile.js
 
 VOLUME ["/app"]
 
-# HTTP + Livereload server
-EXPOSE 8000 35729
+# HTTP
+EXPOSE 8000
 
 ENTRYPOINT ["/sbin/tini","-g","gulp"]
 CMD ["default"]

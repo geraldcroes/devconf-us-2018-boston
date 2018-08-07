@@ -6,19 +6,19 @@ var tasks_dir_path = './tasks',
     gulp = require('gulp'),
     file = '',
     plugins = {
+        asciidoctor: require('asciidoctor.js')(),
+        asciidoctorRevealjs: require('asciidoctor-reveal.js'),
         autoprefixer: require('gulp-autoprefixer'),
+        browserSync: require('browser-sync').create(),
         compass: require('gulp-compass'),
         concatCss: require('gulp-concat-css'),
-        connect: require('gulp-connect'),
         csso: require('gulp-csso'),
         exec: require('gulp-exec'),
-        rename: require('gulp-rename'),
-        mergeStreams: require('merge-stream'),
         fs: require('fs'),
+        mergeStreams: require('merge-stream'),
         path: require('path'),
+        rename: require('gulp-rename'),
         sass: require('gulp-sass'),
-        asciidoctor: require('asciidoctor.js')(),
-        asciidoctorRevealjs: require('asciidoctor-reveal.js')
     },
     current_config = {
         docinfosPath: '/app/slides/docinfos',
@@ -55,6 +55,4 @@ gulp.task('build', gulp.series(
 
 gulp.task('pdf', gulp.series('build', 'pdf-generate'));
 
-gulp.task('serve', gulp.parallel('connect', 'watch'));
-
-gulp.task('default', gulp.series('clean', 'build', 'serve'));
+gulp.task('default', gulp.series('clean', 'build', 'serve', 'watch'));

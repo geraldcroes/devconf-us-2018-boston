@@ -26,6 +26,8 @@ module.exports = function (gulp, plugins, current_config) {
 
         gulp.watch(current_config.fontSrcPath + '/*', gulp.series('fonts'));
 
-        done();
+        gulp.watch("./*.html").on('change', plugins.browserSync.reload);
+
+        return done();
     });
 };

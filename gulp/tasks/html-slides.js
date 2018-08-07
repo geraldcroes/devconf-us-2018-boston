@@ -2,26 +2,22 @@
 
 module.exports = function (gulp, plugins, current_config) {
     'use strict';
-    gulp.task('html', function (done) {
-
-        var attributes = {
-            'revealjsdir': 'node_modules/reveal.js@',
-            'docinfosPath': current_config.docinfosPath,
-        },
-            options = {
-                safe: 'unsafe',
-                backend: 'revealjs',
-                attributes: attributes,
-                to_dir: '/app/dist',
-            };
-
-        plugins.asciidoctor.convertFile(
-            current_config.sourcesDir + '/index.adoc',
-            options
-        );
-
-        plugins.connect.reload();
-
-        done();
+    gulp.task('html', function () {
+        return gulp.src(current_config.sourcesDir + '/**/*.adoc', {read: false})
+            .on('end', function () {
+                plugins.asciidoctor.convertFile(
+                    current_config.sourcesDir + '/index.adoc',
+                    {
+                        safe: 'unsafe',
+                        backend: 'revealjs',
+                        attributes: {
+                            'revealjsdir': 'node_modules/reveal.js@',
+                            'docinfosPath': current_config.docinfosPath,
+                        },
+                        to_dir: current_config.distDir,
+                    }
+                );
+            })
+            .pipe(plugins.browserSync.stream());
     });
 };

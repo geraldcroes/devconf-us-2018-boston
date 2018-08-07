@@ -5,6 +5,6 @@ module.exports = function (gulp, plugins, current_config) {
     gulp.task('fonts', function () {
         return gulp.src([current_config.fontSrcPath + '/*'])
             .pipe(gulp.dest(current_config.distDir + '/styles/fonts/'))
-            .pipe(plugins.connect.reload());
+            .pipe(plugins.browserSync.stream());
     });
 };

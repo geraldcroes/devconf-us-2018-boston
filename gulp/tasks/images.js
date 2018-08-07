@@ -10,6 +10,6 @@ module.exports = function (gulp, plugins, current_config) {
             .pipe(gulp.dest(current_config.distDir + '/images/'));
 
         return plugins.mergeStreams(specificImages, styleImages)
-            .pipe(plugins.connect.reload());
+            .pipe(plugins.browserSync.stream());
     });
 };
