@@ -6,6 +6,7 @@ ZIP_FILE=gh-pages.zip
 REPOSITORY_NAME=traefik-presentation
 REPOSITORY_OWNER=dduportal
 REPOSITORY_URL="https://github.com/${REPOSITORY_OWNER}/${REPOSITORY_NAME}/archive/${ZIP_FILE}"
+GH_PAGE_BASE_URL="https://${REPOSITORY_OWNER}.github.io/${REPOSITORY_NAME}"
 
 # Rebuild the docs directory which will be uploaded to gh-pages
 rm -rf ./docs
@@ -19,10 +20,16 @@ rm -f "./${ZIP_FILE}"
 set +u
 if [ -n "${TRAVIS_TAG}" ]; then
     DEPLOY_DIR="./docs/${TRAVIS_TAG}"
+
+    # Generate QRCode and overwrite the defaullt one
+    npm install -g qrcode
+    qrcode -t svg -o ./slides/images/qrcode.svg "${GH_PAGE_BASE_URL}/${TRAVIS_TAG}"
 else
     DEPLOY_DIR="./docs"
 fi
 set -u
+
+
 
 rm -rf "${DEPLOY_DIR}"
 mv ./dist "${DEPLOY_DIR}"
