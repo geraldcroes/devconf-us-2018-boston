@@ -10,6 +10,7 @@ RUN apk add --no-cache \
 
 # Install App's dependencies (dev and runtime)
 COPY ./package.json /app/package.json
+COPY ./package-lock.json /app/package-lock.json
 WORKDIR /app
 RUN npm install
 

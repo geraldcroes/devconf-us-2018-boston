@@ -10,6 +10,8 @@ x-slides-base: &slides-base
       - ./assets:/app/assets
       - ./gulp/gulpfile.js:/app/gulpfile.js
       - ./gulp/tasks:/app/tasks
+      - ./package.json:/app/package.json
+      - ./package-lock.json:/app/package-lock.json
 
 services:
   serve:
