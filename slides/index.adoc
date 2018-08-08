@@ -36,8 +36,21 @@ include::./includes/why-traefik.adoc[]
 
 include::./includes/traefik-core-concepts.adoc[]
 
-include::./includes/more-capabilities.adoc[]
+include::./includes/with-kubernetes.adoc[]
 
 :leveloffset: -1
 
+== We Missed Talking About ...
+
+   * Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL...
+   * Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
+   CIRCUIT-BREAKERS, CLUSTER MODE ...
+   * Security features, as in SSL, DYNAMIC/WILDCARD TLS CERTIFICATE,
+   KUBERNETES SECRETS, AUTH FORWARD...
+   * HTTP features, as in CUSTOM HEADERS, CUSTOM ERROR PAGES, REDIRECTS,
+   PROXY PROTOCOL, HSTS, WEBSOCKETS...
+   * Tracing and Metrics, as with ZIPKIN, JAEGER, PROMETHEUS...
+
 == Thank You!
+
+

@@ -1,0 +1,66 @@
+
+[{invert}]
+= Træfik with Kubernetes
+
+image::traefik-kubernetes-logo.png["Træfik with Kubernetes Diagram",width=500]
+
+== Kubernetes, A Quick Recap
+
+[{invert}]
+== Cluster
+
+image::article-kubernetes-cluster.png["Kubernetes, as in Cluster", width=800]
+
+[{invert}]
+== Nodes
+
+image::article-kubernetes-nodes.png["Nodes are the machines", width=800]
+
+[{invert}]
+== Pods
+
+image::article-kubernetes-pods.png["Pods are container wrappers", width=800]
+
+[{invert}]
+== Services
+
+image::article-kubernetes-services.png[width=800]
+
+[{invert}]
+== Ingress
+
+image::article-kubernetes-ingress.png[width=700]
+
+[{invert}]
+== Ingress Controller
+
+image::traefik-kubernetes-diagram.png["Traefik as an Ingress Controller", width=800]
+
+
+[{invert}]
+== Træfik Set Up
+
+We have Helm support - link:https://helm.sh/[]
+
+image:helm-logo.svg["Helm Logo",height=200]
+
+[source,bash]
+----
+# Kubernetes Ready
+kubectl get all
+...
+
+# Install Traefik into your Kubernetes cluster
+helm install stable/traefik
+
+# Start your service in Kubernetes
+kubectl apply -f ./myservice.yml
+----
+
+== Træfik's Web Dashboard: Frontends
+
+image::web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
+
+== Træfik's Web Dashboard: Health
+
+image::traefik-health.png["Træfik's Web Dashboard: Health",width=900]
