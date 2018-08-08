@@ -46,4 +46,4 @@ image::architecture-at-a-glance-in-practice.svg[Træfik in Practise]
 [{invert}]
 == End of Core Concepts
 
-image::traefik-raclette.png["",width=350]
+image::traefik-raclette.png[width=350]
