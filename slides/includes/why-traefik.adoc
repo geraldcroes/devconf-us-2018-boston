@@ -17,9 +17,10 @@ image::asterix-premise.jpg[Asterix - Premise]
 
 image::asterix-fight.jpg[Asterix - Fighting]
 
+[{invert}]
 == Nice But Unconfortable
 
-image::yes-help-please.jpg[Asterix - Fighting]
+image::traefik-morbier.png[width=250]
 
 == Where is the service?
 
