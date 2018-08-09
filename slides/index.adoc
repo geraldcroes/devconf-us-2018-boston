@@ -36,9 +36,11 @@ include::./includes/traefik-project.adoc[]
 
 include::./includes/why-traefik.adoc[]
 
+include::./includes/with-kubernetes.adoc[]
+
 include::./includes/traefik-core-concepts.adoc[]
 
-include::./includes/with-kubernetes.adoc[]
+include::./includes/time-to-deploy-some-stuff.adoc[]
 
 :leveloffset: -1
 

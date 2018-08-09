@@ -1,0 +1,73 @@
+[{invert}]
+= Time to Deploy Some Stuff!
+
+image::traefik-roquefort.png[width=600]
+
+== This is the story of a Pod...
+
+image::article-kubernetes-whoami-service.png[]
+
+== ... Who defined itself as a YAML ...
+
+[source,yml]
+----
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoami-service
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: whoami
+----
+
+[source,bash]
+----
+kubectl apply -f whoami-service.yml
+----
+
+== ... That Meets an Ingress ...
+
+image::article-kubernetes-ingress-2.png[]
+
+== ... That Also Defined Itself a YAML ...
+
+[source,yml]
+----
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: whoami-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: whoami.localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: whoami-service
+          servicePort: http
+----
+
+[source,bash]
+----
+kubectl apply -f whoami-service.yml
+----
+
+== ... And In The End They Have a Route Together ...
+
+image::dashboard-whoami-route.png[width=650]
+
+== ... And It Lived Connected to the World Ever After ...
+
+image::whoami-routed.png[width=650]
+
+[{invert}]
+== Such A Cute Example! ==
+
+image::traefik-cute.png[width=350]

@@ -36,7 +36,6 @@ image::article-kubernetes-ingress.png[width=700]
 
 image::traefik-kubernetes-diagram.png["Traefik as an Ingress Controller", width=800]
 
-
 [{invert}]
 == Træfik Set Up
 
@@ -59,8 +58,10 @@ kubectl apply -f ./myservice.yml
 
 == Træfik's Web Dashboard: Frontends
 
-image::web.frontend.png["Træfik's Web Dashboard: Frontends",width=900]
+image::dashboard.png["Træfik's Web Dashboard: Frontends",width=900]
 
-== Træfik's Web Dashboard: Health
-
-image::traefik-health.png["Træfik's Web Dashboard: Health",width=900]
+[source,bash]
+----
+helm install stable/traefik
+   --set dashboard.enabled=true,dashboard.domain=dashboard.localhost
+----
