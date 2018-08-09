@@ -11,6 +11,22 @@ image::article-kubernetes-whoami-service.png[]
 
 [source,yml]
 ----
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: whoami-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: whoami.localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: whoami-service
+          servicePort: http
+---
 apiVersion: v1
 kind: Service
 metadata:
@@ -38,20 +54,22 @@ image::article-kubernetes-ingress-2.png[]
 [source,yml]
 ----
 apiVersion: extensions/v1beta1
-kind: Ingress
+kind: Deployment
 metadata:
-  name: whoami-ingress
-  annotations:
-    kubernetes.io/ingress.class: traefik
+  name: whoami-deployment
 spec:
-  rules:
-  - host: whoami.localhost
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: whoami-service
-          servicePort: http
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whoami
+  template:
+    metadata:
+      labels:
+        app: whoami
+    spec:
+      containers:
+      - name: whoami-container
+        image: containous/whoami
 ----
 
 [source,bash]
@@ -71,3 +89,70 @@ image::whoami-routed.png[width=650]
 == Such A Cute Example! ==
 
 image::traefik-cute.png[width=350]
+
+More Routes?
+
+== With Two Replicas ==
+
+[source,yaml]
+----
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: whoareyou-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: whoareyou
+  template:
+    metadata:
+      labels:
+        app: whoareyou
+    spec:
+      containers:
+      - name: whoareyou-container
+        image: containous/whoami
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoareyou-service
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: whoareyou
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: whoareyou-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: whoareyou.localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: whoareyou-service
+          servicePort: http
+----
+
+[source,bash]
+----
+kubectl apply -f whoareyou.yml
+----
+
+== And The New Routes ==
+
+image::dashboard-whoareyou.png[width=800]
+
+[{invert}]
+== The Whole Picture ==
+
+image::article-kubernetes-demo-architecture.png[width=800]
