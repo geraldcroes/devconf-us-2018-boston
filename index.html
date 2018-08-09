@@ -37,18 +37,7 @@ kubectl apply -f ./myservice.yml</code></pre></div></div></section><section id="
 <div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">helm install stable/traefik
    --set dashboard.enabled=true,dashboard.domain=dashboard.localhost</code></pre></div></div></section></section>
 <section><section id="trfik_core_concepts" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Træfik Core Concepts</h2><div class="imageblock" style=""><img src="images/traefik-must-learn.png" alt="traefik must learn"></div></section><section id="remember_the_diagram" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Remember the Diagram?</h2><div class="imageblock" style=""><img src="images/traefik-architecture.svg" alt="Træfik's Architecture" width="900"></div></section><section id="let_s_simplify" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Let&#8217;s Simplify</h2><div class="imageblock" style=""><img src="images/architecture-simplified.svg" alt="Træfik's Simplified Architecture" width="900"></div></section><section id="providers" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Providers</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance-provider.svg" alt="Træfik's Simplified Architecture" width="900"></div></section><section id="entrypoints" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Entrypoints</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance-entrypoints.svg" alt="Træfik's Entrypoints" width="900"></div></section><section id="backends" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Backends</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance-backends.svg" alt="Træfik's Backends" width="900"></div></section><section id="frontends" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Frontends</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance-frontends.svg" alt="Træfik's Frontends" width="900"></div></section><section id="at_a_glance" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>At a Glance</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance.svg" alt="Træfik Architecture At A Glance" width="900"></div></section><section id="in_practice" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>In Practice</h2><div class="imageblock" style=""><img src="images/architecture-at-a-glance-in-practice.svg" alt="Træfik in Practise"></div></section><section id="end_of_core_concepts" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>End of Core Concepts</h2><div class="imageblock" style=""><img src="images/traefik-raclette.png" alt="traefik raclette" width="350"></div></section></section>
-<section><section id="time_to_deploy_some_stuff" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Time to Deploy Some Stuff!</h2><div class="imageblock" style=""><img src="images/traefik-roquefort.png" alt="traefik roquefort" width="600"></div></section><section id="this_is_the_story_of_a_pod"><h2>This is the story of a Pod&#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/article-kubernetes-whoami-service.png" alt="article kubernetes whoami service"></div></section><section id="who_defined_itself_as_a_yaml"><h2>&#8230;&#8203; Who defined itself as a YAML &#8230;&#8203;</h2><div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="yml language-yml">apiVersion: v1
-kind: Service
-metadata:
-  name: whoami-service
-spec:
-  ports:
-  - name: http
-    targetPort: 80
-    port: 80
-  selector:
-    app: whoami</code></pre></div></div>
-<div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">kubectl apply -f whoami-service.yml</code></pre></div></div></section><section id="that_meets_an_ingress"><h2>&#8230;&#8203; That Meets an Ingress &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/article-kubernetes-ingress-2.png" alt="article kubernetes ingress 2"></div></section><section id="that_also_defined_itself_a_yaml"><h2>&#8230;&#8203; That Also Defined Itself a YAML &#8230;&#8203;</h2><div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="yml language-yml">apiVersion: extensions/v1beta1
+<section><section id="time_to_deploy_some_stuff" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Time to Deploy Some Stuff!</h2><div class="imageblock" style=""><img src="images/traefik-roquefort.png" alt="traefik roquefort" width="600"></div></section><section id="this_is_the_story_of_a_pod"><h2>This is the story of a Pod&#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/article-kubernetes-whoami-service.png" alt="article kubernetes whoami service"></div></section><section id="who_defined_itself_as_a_yaml"><h2>&#8230;&#8203; Who defined itself as a YAML &#8230;&#8203;</h2><div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="yml language-yml">apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: whoami-ingress
@@ -62,8 +51,83 @@ spec:
       - path: /
         backend:
           serviceName: whoami-service
+          servicePort: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoami-service
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: whoami</code></pre></div></div>
+<div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">kubectl apply -f whoami-service.yml</code></pre></div></div></section><section id="that_meets_an_ingress"><h2>&#8230;&#8203; That Meets an Ingress &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/article-kubernetes-ingress-2.png" alt="article kubernetes ingress 2"></div></section><section id="that_also_defined_itself_a_yaml"><h2>&#8230;&#8203; That Also Defined Itself a YAML &#8230;&#8203;</h2><div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="yml language-yml">apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: whoami-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whoami
+  template:
+    metadata:
+      labels:
+        app: whoami
+    spec:
+      containers:
+      - name: whoami-container
+        image: containous/whoami</code></pre></div></div>
+<div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">kubectl apply -f whoami-service.yml</code></pre></div></div></section><section id="and_in_the_end_they_have_a_route_together"><h2>&#8230;&#8203; And In The End They Have a Route Together &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/dashboard-whoami-route.png" alt="dashboard whoami route" width="650"></div></section><section id="and_it_lived_connected_to_the_world_ever_after"><h2>&#8230;&#8203; And It Lived Connected to the World Ever After &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/whoami-routed.png" alt="whoami routed" width="650"></div></section><section id="such_a_cute_example" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Such A Cute Example!</h2><div class="imageblock" style=""><img src="images/traefik-cute.png" alt="traefik cute" width="350"></div>
+<div class="paragraph"><p>More Routes?</p></div></section><section id="with_two_replicas"><h2>With Two Replicas</h2><div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="yaml language-yaml">apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: whoareyou-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: whoareyou
+  template:
+    metadata:
+      labels:
+        app: whoareyou
+    spec:
+      containers:
+      - name: whoareyou-container
+        image: containous/whoami
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: whoareyou-service
+spec:
+  ports:
+  - name: http
+    targetPort: 80
+    port: 80
+  selector:
+    app: whoareyou
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: whoareyou-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+  - host: whoareyou.localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: whoareyou-service
           servicePort: http</code></pre></div></div>
-<div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">kubectl apply -f whoami-service.yml</code></pre></div></div></section><section id="and_in_the_end_they_have_a_route_together"><h2>&#8230;&#8203; And In The End They Have a Route Together &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/dashboard-whoami-route.png" alt="dashboard whoami route" width="650"></div></section><section id="and_it_lived_connected_to_the_world_ever_after"><h2>&#8230;&#8203; And It Lived Connected to the World Ever After &#8230;&#8203;</h2><div class="imageblock" style=""><img src="images/whoami-routed.png" alt="whoami routed" width="650"></div></section><section id="such_a_cute_example" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>Such A Cute Example!</h2><div class="imageblock" style=""><img src="images/traefik-cute.png" alt="traefik cute" width="350"></div></section></section>
+<div class="listingblock"><div class="content"><pre class="highlight"><code data-noescape class="bash language-bash">kubectl apply -f whoareyou.yml</code></pre></div></div></section><section id="and_the_new_routes"><h2>And The New Routes</h2><div class="imageblock" style=""><img src="images/dashboard-whoareyou.png" alt="dashboard whoareyou" width="800"></div></section><section id="the_whole_picture" data-background-color="rgb(226, 226, 226)" data-state="invert"><h2>The Whole Picture</h2><div class="imageblock" style=""><img src="images/article-kubernetes-demo-architecture.png" alt="article kubernetes demo architecture" width="800"></div></section></section>
 <section id="we_missed_talking_about"><h2>We Missed Talking About &#8230;&#8203;</h2><div class="ulist"><ul><li><p>Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL&#8230;&#8203;</p></li><li><p>Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
 CIRCUIT-BREAKERS, CLUSTER MODE &#8230;&#8203;</p></li><li><p>Security features, as in SSL, DYNAMIC/WILDCARD TLS CERTIFICATE,
 KUBERNETES SECRETS, AUTH FORWARD&#8230;&#8203;</p></li><li><p>HTTP features, as in CUSTOM HEADERS, CUSTOM ERROR PAGES, REDIRECTS,
