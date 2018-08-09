@@ -1,8 +1,10 @@
 
-= Træfik as an Ingress Controller for Kubernetes
+= Træfik & Kubernetes
 include::./includes/attributes.adoc[]
 
 image::traefik-logo-white-background.png["Træfik's Logo",height=150]
+
+Presentation available at link:https://github.com/geraldcroes/devconf-us-2018-boston[https://github.com/geraldcroes/devconf-us-2018-boston]
 
 // //// Speaker Slide and Company slide
 == Whoami

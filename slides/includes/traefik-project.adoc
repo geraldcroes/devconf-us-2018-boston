@@ -1,8 +1,8 @@
 
 [{invert}]
-= Træfik Project
+= The Project
 
-Træfik: The Cloud Native Edge Router
+The Cloud Native Edge Router
 
 image::traefik-logo.svg[Træfik's Logo]
 
