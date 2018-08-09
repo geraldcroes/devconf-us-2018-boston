@@ -323,3 +323,7 @@ body {
 .reveal .line-trough-title h2 {
     text-decoration: line-through;
 }
+
+.no-margin-img img {
+    margin: 0 !important;
+}

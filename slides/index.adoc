@@ -6,8 +6,9 @@ image::traefik-logo-white-background.png["Træfik's Logo",height=150]
 
 // //// Speaker Slide and Company slide
 == Whoami
-* Gerald Croes - @geraldcroes link:https://twitter.com/geraldcroes[icon:twitter[]] link:https://medium.com/@geraldcroes[icon:medium[]] link:https://github.com/geraldcroes[icon:github[]]
-* Senior Developer @ Containous
+[.no-margin-img]
+* Gerald Croes - @geraldcroes link:https://twitter.com/geraldcroes[icon:twitter[]] link:https://medium.com/@geraldcroes[icon:medium[]] link:https://github.com/geraldcroes[icon:github[]] link:https://dev.to/geraldcroes[image:dev-to.svg["dev-to",height=35]]
+* Senior Developer @ link:https://containo.us/[Containous]
 * Former Chief Enterprise Architect for an Insurance Company
 * Passionate about Taekwondo ...
 * ... Since people were making fun of my former love for PHP
@@ -19,6 +20,7 @@ image::traefik-logo-white-background.png["Træfik's Logo",height=150]
 * We Deliver Træfik
 * Commercial Support for Træfik
 * 12 people, 90% technical experts
+* We Are Hiring!
 
 image::containous-logo.png["Containous Logo"]
 // //// end of Speaker Slide and Company slide
