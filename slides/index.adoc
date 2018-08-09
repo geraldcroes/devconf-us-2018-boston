@@ -44,8 +44,9 @@ include::./includes/time-to-deploy-some-stuff.adoc[]
 
 :leveloffset: -1
 
-== We Missed Talking About ...
+== I Wish We Could Have Talked About ...
 
+   * Https with Let's Encrypt
    * Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL...
    * Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
    CIRCUIT-BREAKERS, CLUSTER MODE ...
@@ -55,6 +56,8 @@ include::./includes/time-to-deploy-some-stuff.adoc[]
    PROXY PROTOCOL, HSTS, WEBSOCKETS...
    * Tracing and Metrics, as with ZIPKIN, JAEGER, PROMETHEUS...
 
+[{invert}]
 == Thank You!
 
+image::traefik-cancoillotte-relax.png[width=700]
 
