@@ -15,7 +15,7 @@ image::traefik-logo.svg[Træfik's Logo]
 * 1400+ LGTM
 * 280+ 👷
 
-== I've Found A Bug!
+== I've Found a Bug!
 
 [source,bash]
 ----

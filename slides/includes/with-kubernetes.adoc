@@ -4,7 +4,7 @@
 
 image::traefik-kubernetes-logo.png["Træfik with Kubernetes Diagram",width=500]
 
-== Kubernetes, A Quick Recap
+== Kubernetes, a Quick Recap
 
 [{invert}]
 == Cluster
