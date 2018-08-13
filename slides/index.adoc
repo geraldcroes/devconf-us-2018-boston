@@ -44,11 +44,12 @@ include::./includes/traefik-core-concepts.adoc[]
 
 include::./includes/time-to-deploy-some-stuff.adoc[]
 
+include::./includes/lets-encrypt.adoc[]
+
 :leveloffset: -1
 
 == I Wish We Could Have Talked About ...
 
-   * Https with Let's Encrypt
    * Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL...
    * Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
    CIRCUIT-BREAKERS, CLUSTER MODE ...

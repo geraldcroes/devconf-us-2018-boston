@@ -1,0 +1,46 @@
+= Because Security Matters
+
+image::captain-traefik.png[width=450]
+
+[{invert}]
+== HTTPS -- Traefik & Let's Encrypt
+
+image::traefik-lets-encrypt-diagram.png[width=800]
+
+== Let's Encrypt: Configuration Example
+
+[source,toml]
+----
+[acme]
+email = "me@mydomain.me"
+storage = "/acme/acme.json"
+entryPoint = "https"
+OnHostRule = true
+   [acme.httpChallenge]
+   entryPoint="http"
+----
+
+== Let's Encrypt: Http Challenge
+
+image::lets-encrypt-http-challenge.png[width=1000]
+
+== Let's Encrypt: DNS Challenge
+
+image::lets-encrypt-dns-challenge.png[width=1000]
+
+== Authentication -- Basic Auth
+
+[source,bash]
+----
+htpasswd -c authfile myuser
+kubectl create secret generic mysecretplace --from-file authfile
+----
+
+Then add the following annotations to your ingress object:
+[source,yaml]
+----
+ annotations:
+   kubernetes.io/ingress.class: traefik
+   ingress.kubernetes.io/auth-type: "basic"
+   ingress.kubernetes.io/auth-secret: "mysecret"
+----
