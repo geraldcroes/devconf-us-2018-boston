@@ -50,14 +50,43 @@ include::./includes/lets-encrypt.adoc[]
 
 == I Wish We Could Have Talked About ...
 
-   * Dynamic Configurations with GRPC, DOCKER, SWARM, MESOS, CONSUL...
-   * Reverse-Proxy features, as in RATE LIMITING, HEALTH CHECKS,
-   CIRCUIT-BREAKERS, CLUSTER MODE ...
-   * Security features, as in SSL, DYNAMIC/WILDCARD TLS CERTIFICATE,
-   KUBERNETES SECRETS, AUTH FORWARD...
-   * HTTP features, as in CUSTOM HEADERS, CUSTOM ERROR PAGES, REDIRECTS,
-   PROXY PROTOCOL, HSTS, WEBSOCKETS...
-   * Tracing and Metrics, as with ZIPKIN, JAEGER, PROMETHEUS...
+=== Other Supported Providers
+
+   * Docker / Swarm
+   * Mesos / Marathon
+   * Consul / Consul Catalog
+   * Eureka
+   *
+
+=== Reverse Proxy Features
+
+   * Rate Limiting
+   * Health Checks,
+   * Circuit Breakers
+   * Cluster Mode
+   * GRPC
+
+=== Security Features
+
+   * Tls Certificates
+   * Kubernetes Secrets
+   * Auth Forward
+
+===  HTTP Features
+   * Custom Headers
+   * Custom Error Pages
+   * Redirects
+   * Proxy Protocol
+   * HSTS
+   * Websockets
+
+=== Tracing, Metrics
+
+   * ZIPKIN
+   * JAEGER
+   * PROMETHEUS
+
+=== And Other Features Coming Soon!
 
 [{invert}]
 == Thank You!
