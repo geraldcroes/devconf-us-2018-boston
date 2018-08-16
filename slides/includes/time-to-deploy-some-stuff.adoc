@@ -12,20 +12,22 @@ image::article-kubernetes-whoami-service.png[]
 [source,yml]
 ----
 apiVersion: extensions/v1beta1
-kind: Ingress
+kind: Deployment
 metadata:
-  name: whoami-ingress
-  annotations:
-    kubernetes.io/ingress.class: traefik
+  name: whoami-deployment
 spec:
-  rules:
-  - host: whoami.localhost
-    http:
-      paths:
-      - path: /
-        backend:
-          serviceName: whoami-service
-          servicePort: http
+  replicas: 1
+  selector:
+    matchLabels:
+      app: whoami
+  template:
+    metadata:
+      labels:
+        app: whoami
+    spec:
+      containers:
+      - name: whoami-container
+        image: containous/whoami
 ---
 apiVersion: v1
 kind: Service
@@ -54,22 +56,20 @@ image::article-kubernetes-ingress-2.png[]
 [source,yml]
 ----
 apiVersion: extensions/v1beta1
-kind: Deployment
+kind: Ingress
 metadata:
-  name: whoami-deployment
+  name: whoami-ingress
+  annotations:
+    kubernetes.io/ingress.class: traefik
 spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: whoami
-  template:
-    metadata:
-      labels:
-        app: whoami
-    spec:
-      containers:
-      - name: whoami-container
-        image: containous/whoami
+  rules:
+  - host: whoami.localhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: whoami-service
+          servicePort: http
 ----
 
 [source,bash]

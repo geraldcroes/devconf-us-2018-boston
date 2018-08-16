@@ -22,6 +22,12 @@ image::article-kubernetes-nodes.png["Nodes are the machines", width=800]
 image::article-kubernetes-pods.png["Pods are container wrappers", width=800]
 
 [{invert}]
+== Deployments
+
+image::article-kubernetes-deployment.png[width=800]
+
+
+[{invert}]
 == Services
 
 image::article-kubernetes-services.png[width=800]
