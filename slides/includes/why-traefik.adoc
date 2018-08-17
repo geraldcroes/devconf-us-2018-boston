@@ -22,7 +22,7 @@ image::asterix-fight.jpg[Asterix - Fighting]
 
 image::traefik-morbier.png[width=250]
 
-== Where Is the service?
+== Where Is the Service?
 
 image::where-is-charlie.jpg["Where os Charlie?",width=900]
 
@@ -46,11 +46,11 @@ image::etcd.png[width=80,float=right]
 image::zookeeper.png[width=80,float=right]
 
 
-== What If I Told You?
+== What If I Told You ...
 
 image::traefik-matrix-pills.png[What If I Told You,width=350]
 
-That You Don't Have to Write This Configuration File...?
+... That You Don't Have to Write This Configuration File?
 
 [{invert}]
 == Here Comes Træfik!
