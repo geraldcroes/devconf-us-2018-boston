@@ -56,12 +56,11 @@ include::./includes/lets-encrypt.adoc[]
    * Mesos / Marathon
    * Consul / Consul Catalog
    * Eureka
-   *
 
 === Reverse Proxy Features
 
    * Rate Limiting
-   * Health Checks,
+   * Health Checks
    * Circuit Breakers
    * Cluster Mode
    * GRPC
